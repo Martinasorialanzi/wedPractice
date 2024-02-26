@@ -1,14 +1,17 @@
 /* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
 import React from "react";
 
 const Banner = () => {
   return (
     <>
       <section id='#home'className="grid grid-cols-1 w-[100%] justify-center items-center lg:grid-cols-2 hidden lg:grid">
-        <img
+        <Image
           src="https://i.ibb.co/svXWXcV/image-Banner.webp"
           alt="banner"
-          className="w-[65%] h-[100%] col-span-1 justify-self-center "
+          width={600}
+          height={800}
+          className=" col-span-1 justify-self-center "
         />
         <section className="col-span-1 justify-self-center text-center">
           <p className="text-[55px] font-normal  ">Nombre & Nombre</p>
