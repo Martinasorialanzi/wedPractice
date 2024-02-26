@@ -28,7 +28,7 @@ const Banner = () => {
           className="w-[80%] h-[100%]  justify-self-center "
         />
         <section className="col-span-1 text-center mt-3">
-          <p className="text-[15px] font-normal text-center ">Save the date</p>
+          <p className="text-[25px] font-normal text-center ">Save the date</p>
           <p className="text-[20px] font-normal text-center ">
             11 de Noviembre de 2023
           </p>
