@@ -1,5 +1,6 @@
 import Confirmation from "@/components/confirmation/Confirmation";
 import Event from "@/components/event/Event";
+import Footer from "@/components/footer/Footer";
 import Banner from "@/components/home/Home";
 import Mas from "@/components/mas/Mas";
 import Regalos from "@/components/regalos/Regalos";
@@ -12,6 +13,7 @@ export default function Home() {
       <Confirmation/>
       <Regalos/>
       <Mas/>
+      {/* <Footer/> */}
      
     </main>
   );
