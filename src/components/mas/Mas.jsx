@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
 import React from "react";
 
 const Mas = () => {
@@ -9,9 +10,11 @@ const Mas = () => {
         className=" w-[100%] justify-center items-center text-center  p-[50px] lg:pt-[200px] lg:px-[250px] "
       >
         <section>
-          <img
+          <Image
             src="https://i.ibb.co/3zzPHNt/Vector-1.webp"
             alt="spotify "
+            width={53}
+            height={53}
             className="mx-auto block w-[60px] h-[60px]"
           />
           <p className="lg:text-[40px] font-normal  mt-5  text-[20px]">
@@ -28,9 +31,11 @@ const Mas = () => {
         </section>
 
         <section>
-          <img
+          <Image
             src="https://i.ibb.co/kqFCr9D/Vector-2.webp"
             alt="spotify "
+            width={53}
+            height={46}
             className="mx-auto block w-[60px] h-[50px] mt-20"
           />
           <p className="lg:text-[40px] font-normal  mt-5  text-[20px]">
