@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
 import React from "react";
 
 const Event = () => {
@@ -14,10 +15,12 @@ const Event = () => {
             Estamos felices de compartir este día con vos
           </p>
         </section>
-        <img
+        <Image
           src="https://i.ibb.co/kDGMNk4/Rectangle-5.webp"
           alt="banner"
-          className="w-[90%] h-[100%] col-span-1 justify-self-center "
+          width={600}
+          height={290}
+          className="col-span-1 justify-self-center "
           />
       </section>
 
@@ -54,10 +57,12 @@ const Event = () => {
             </button>
           </section>
         </section>
-        <img
+        <Image
           src="https://i.ibb.co/mXZwXXZ/Rectangle-3.webp"
           alt="banner"
-          className="w-[90%] h-[100%] col-span-1 justify-self-center "
+          width={600}
+          height={492}
+          className=" col-span-1 justify-self-center "
           />
       </section>
         </section>
@@ -75,10 +80,12 @@ const Event = () => {
             Estamos felices de compartir este día con vos
           </p>
         </section>
-        <img
+        <Image
           src="https://i.ibb.co/kDGMNk4/Rectangle-5.webp"
           alt="banner"
-          className="w-[100%] h-[100%] col-span-1 justify-self-center "
+          width={391}
+          height={189}
+          className="col-span-1 justify-self-center "
           />
       </section>
 
@@ -89,10 +96,12 @@ const Event = () => {
     className="grid w-[100%] justify-center items-center  lg:hidden"
     >
         <section className="col-span-1 mt-10 ">
-        <img
+        <Image
           src="https://i.ibb.co/mXZwXXZ/Rectangle-3.webp"
           alt="banner"
-          className="w-[100%] h-[100%] col-span-1 justify-self-center "
+          width={391}
+          height={320}
+          className="col-span-1 justify-self-center "
           />
           <section className="mt-10 text-center ">
             <p className="text-[20px] font-normal  text-center  ">Ceremonia</p>

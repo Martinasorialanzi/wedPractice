@@ -25,10 +25,12 @@ const Banner = () => {
 
       <section className="grid w-[100%] justify-center items-center  lg:hidden">
         <p className="text-[30px] font-medium text-center">Nombre & Nombre</p>
-        <img
+        <Image
           src="https://i.ibb.co/svXWXcV/image-Banner.webp"
           alt="banner"
-          className="w-[80%] h-[100%]  justify-self-center "
+          width={314}
+          height={419}
+          className="justify-self-center "
         />
         <section className="col-span-1 text-center mt-3">
           <p className="text-[25px] font-normal text-center ">Save the date</p>
