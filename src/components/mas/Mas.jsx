@@ -15,7 +15,7 @@ const Mas = () => {
             alt="spotify "
             width={53}
             height={53}
-            className="mx-auto block w-[60px] h-[60px]"
+            className="mx-auto block "
           />
           <p className="lg:text-[40px] font-normal  mt-5  text-[20px]">
             Canciones que no pueden faltar
@@ -36,7 +36,7 @@ const Mas = () => {
             alt="spotify "
             width={53}
             height={46}
-            className="mx-auto block w-[60px] h-[50px] mt-20"
+            className="mx-auto block mt-20"
           />
           <p className="lg:text-[40px] font-normal  mt-5  text-[20px]">
             Recuerdos

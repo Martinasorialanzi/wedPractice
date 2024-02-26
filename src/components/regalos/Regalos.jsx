@@ -11,14 +11,14 @@ const Regalos = () => {
       alt="banner"
       width={97}
       height={97}
-      className="lg:col-span-1 lg:w-[40%] lg:h-[100%] w-[10%] h-[100%]  mt-4 justify-self-center lg:mt-0 "
+      className="lg:col-span-1 mt-4 justify-self-center lg:mt-0 "
     />
     <Image
       src="https://i.ibb.co/9pHQws1/Vector.webp"
       alt="banner"
       width={97}
       height={31}
-      className="cols lg:col-span-1 lg:w-[40%] lg:h-[30%] w-[70px] h-[40px] mt-10 lg:mt-0 justify-self-center "
+      className="cols lg:col-span-1  mt-10 lg:mt-0 justify-self-center "
     />
       <p className="text-[14px] lg:text-[20px] mt-4  lg:mt-0 font-normal text-center lg:col-span-1">Alias: wedding.project</p>
 
