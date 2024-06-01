@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import React from "react";
+import Counter from "./Counter";
 
 const Banner = () => {
   return (
@@ -17,9 +18,10 @@ const Banner = () => {
           <p className="text-[55px] font-normal  ">Nombre & Nombre</p>
           <p className="text-[30px] font-normal text-right ">Save the date</p>
           <p className="text-[20px] font-normal text-right">11 de Noviembre de 2023</p>
-          <p className="text-[30px] font-normal text-right">
+          {/* <p className="text-[30px] font-normal text-right">
             54 dias | 12 horas | 53 minutos
-          </p>
+          </p> */}
+          {Counter}
         </section>
       </section>
 
