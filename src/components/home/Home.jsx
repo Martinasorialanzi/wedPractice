@@ -6,16 +6,17 @@ import Counter from "./Counter";
 const Banner = () => {
   return (
     <>
-      <section id='#home'className="grid grid-cols-1 w-[100%] justify-center items-center lg:grid-cols-2 hidden lg:grid">
+      <section id='#home'className="grid grid-cols-1 w-[100%] justify-center items-center hidden lg:grid ">
+      <p className="text-[55px] font-normal text-center ">Nombre & Nombre</p>
         <Image
           src="https://i.ibb.co/svXWXcV/image-Banner.webp"
           alt="banner"
-          width={600}
-          height={800}
+          width={469}
+          height={625}
           className=" col-span-1 justify-self-center "
         />
         <section className="col-span-1 justify-self-center text-center">
-          <p className="text-[55px] font-normal  ">Nombre & Nombre</p>
+          
           <p className="text-[30px] font-normal  ">Save the date</p>
           <p className="text-[20px] font-normal ">11 de Noviembre de 2023</p>
           <Counter />
