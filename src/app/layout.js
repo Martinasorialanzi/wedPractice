@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inika.className}>
-        <Navbar />
+        {/* <Navbar /> */}
         {children}
         <Footer />
       </body>

@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import React from "react";
+import Counter from "./Counter";
 
 const Banner = () => {
   return (
@@ -15,31 +16,29 @@ const Banner = () => {
         />
         <section className="col-span-1 justify-self-center text-center">
           <p className="text-[55px] font-normal  ">Nombre & Nombre</p>
-          <p className="text-[30px] font-normal text-right ">Save the date</p>
-          <p className="text-[20px] font-normal text-right">11 de Noviembre de 2023</p>
-          <p className="text-[30px] font-normal text-right">
-            54 dias | 12 horas | 53 minutos
-          </p>
+          <p className="text-[30px] font-normal  ">Save the date</p>
+          <p className="text-[20px] font-normal ">11 de Noviembre de 2023</p>
+          <Counter />
         </section>
       </section>
 
-      <section className="grid w-[100%] justify-center items-center  lg:hidden">
-        <p className="text-[30px] font-medium text-center">Nombre & Nombre</p>
+{/* responsive */}
+
+      <section className="grid w-[100%] justify-center items-center mt-5  lg:hidden">
+        <p className="text-[25px] font-medium text-center">Nombre & Nombre</p>
         <Image
-          src="https://i.ibb.co/svXWXcV/image-Banner.webp"
+          src="/pareja.webp"
           alt="banner"
-          width={314}
+          width={380}
           height={419}
-          className="justify-self-center "
+          className="justify-self-center mt-2 "
         />
         <section className="col-span-1 text-center mt-3">
-          <p className="text-[25px] font-normal text-center ">Save the date</p>
-          <p className="text-[20px] font-normal text-center ">
-            11 de Noviembre de 2023
-          </p>
+          <p className="text-[20px] font-normal text-center ">Save the date</p>
           <p className="text-[15px] font-normal text-center ">
-            54 dias | 12 horas | 53 minutos
+            2 de Noviembre de 2023
           </p>
+         <Counter />
         </section>
       </section>
     </>

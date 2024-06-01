@@ -6,7 +6,7 @@ import Regalos from "@/components/regalos/Regalos";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between mt-20 mx-10">
+    <main className="flex min-h-screen flex-col items-center justify-between mt-5 mx-3 ">
       <Banner />
       <Event />
       <Confirmation />
