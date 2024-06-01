@@ -5,30 +5,30 @@ import React from "react";
 const Event = () => {
   return (
     <>
-    <section className=" lg:ml-20 mt-10">
+    {/* <section className=" lg:ml-20 mt-10">
       <section
         id="Evento"
-        className="grid grid-cols-1 w-[100%] justify-center items-center lg:grid-cols-2 hidden lg:grid"
+        className="grid grid-cols-1 w-[100%] justify-center items-center  hidden lg:grid"
         >
         <section className="col-span-1 justify-self-center ">
           <p className="text-[40px] font-normal  text-left ">
             Estamos felices de compartir este día con vos
           </p>
         </section>
-        <Image
+        {/* <Image
           src="https://i.ibb.co/kDGMNk4/Rectangle-5.webp"
           alt="banner"
           width={600}
           height={290}
           className="col-span-1 justify-self-center "
-          />
-      </section>
+          /> */}
+      {/* </section>
 
 
 
       <section
     
-    className="grid grid-cols-1 w-[100%] justify-center items-center lg:grid-cols-2 hidden lg:grid  mt-10"
+    className="grid grid-cols-1 w-[100%] justify-center items-center  hidden lg:grid  mt-10"
     >
         <section className="col-span-1  ">
           <section>
@@ -57,15 +57,9 @@ const Event = () => {
             </button>
           </section>
         </section>
-        <Image
-          src="https://i.ibb.co/mXZwXXZ/Rectangle-3.webp"
-          alt="banner"
-          width={600}
-          height={492}
-          className=" col-span-1 justify-self-center "
-          />
+        
       </section>
-        </section>
+        // </section> */} */
 
 
 {/* responsive */}
@@ -73,10 +67,10 @@ const Event = () => {
 <section className=" mt-0">
       <section
         id="Evento"
-        className="grid w-[100%] justify-center items-center  lg:hidden"
+        className="grid w-[100%] justify-center items-center  "
         >
         <section className="col-span-1 justify-self-center ">
-          <p className="text-[20px] font-medium  text-center mb-0 ">
+          <p className="text-[20px] lg:text-[40px] font-medium  text-center mb-0 ">
             Queremos compartir este día con vos
           </p>
         </section>
@@ -93,7 +87,7 @@ const Event = () => {
 
       <section
     
-    className="grid w-[100%] justify-center items-center  lg:hidden"
+    className="grid w-[100%] justify-center items-center  "
     >
         <section className="  col-span-1 mt-3 ">
         

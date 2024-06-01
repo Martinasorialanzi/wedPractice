@@ -44,7 +44,7 @@ const Counter = () => {
         {countdown.minutes ? `${countdown.minutes} minutos ` : ''}
         
       </div>
-      <p className="text-[15px] font-bold text-center ">
+      <p className="text-[15px] lg:text-[30px] font-bold text-center ">
       {countdown.days=== 0 && countdown.hours === 0 && countdown.minutes=== 0 ? `Llego el dia` : ''}
       </p>
     </div>
