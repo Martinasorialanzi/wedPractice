@@ -7,7 +7,7 @@ const Mas = () => {
     <>
       <section
         id="Más"
-        className=" w-[100%] justify-center items-center text-center mt-5 p-[30px] lg:pt-[200px] lg:px-[250px] "
+        className=" w-[100%] justify-center items-center text-center mt-5 p-[30px]  lg:px-[250px] lg:mt-20 "
       >
         <section>
           <Image
@@ -24,13 +24,13 @@ const Mas = () => {
             Queremos crear una playlist inolvidable
           </p>
           <div className="flex justify-center items-center">
-          <button className=" lg:text-[20px] text-[15px] font-normal mt-4 text-center bg-[#5E5E5E] rounded-[30px] text-[#ffffff] w-[181px] h-[30px]">
+          <button className=" lg:text-[20px] text-[15px] font-normal mt-4 text-center bg-[#5E5E5E] rounded-[30px] text-[#ffffff] w-[181px] lg: w-[228px] h-[30px]">
             Agregar a la playlist
           </button>
           </div>
         </section>
 
-        <section>
+        <section className="lg:mt-20">
           <Image
             src="https://i.ibb.co/kqFCr9D/Vector-2.webp"
             alt="spotify "
