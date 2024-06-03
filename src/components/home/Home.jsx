@@ -1,38 +1,42 @@
 /* eslint-disable @next/next/no-img-element */
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState, useRef, useEffect } from 'react';
 import Counter from "./Counter";
 
 const Banner = () => {
+
+  // const imageRef = useRef(null);
+  // const [isVisible, setIsVisible] = useState(false);
+
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver((entries) => {
+  //     const entry = entries[0];
+  //     setIsVisible(entry.isIntersecting); // Trigger animation based on visibility
+  //   }, { threshold: 0.75 }); // Observe when 25% of the image is in the viewport
+
+  //   if (imageRef.current) {
+  //     observer.observe(imageRef.current);
+  //   }
+
+  //   return () => observer.disconnect(); // Cleanup on unmount
+  // }, [imageRef]);
+
+
   return (
     <>
-      <section id='#home'className="grid grid-cols-1 w-[100%] justify-center items-center hidden lg:grid ">
-      <p className="text-[55px] font-normal text-center ">Nombre & Nombre</p>
-        <Image
-          src="https://i.ibb.co/svXWXcV/image-Banner.webp"
-          alt="banner"
-          width={469}
-          height={625}
-          className=" col-span-1 justify-self-center "
-        />
-        <section className="col-span-1 justify-self-center text-center">
-          
-          <p className="text-[30px] font-normal  ">Save the date</p>
-          <p className="text-[20px] font-normal ">11 de Noviembre de 2023</p>
-          <Counter />
-        </section>
-      </section>
+      
 
-{/* responsive */}
-
-      <section className="grid w-[100%] justify-center items-center mt-5  lg:hidden">
-        <p className="text-[25px] font-medium text-center">Nombre & Nombre</p>
+      <section className="grid w-[100%] justify-center items-center mt-5  ">
+        <p className="text-[25px] lg:text-[40px] font-medium text-center">Nombre & Nombre</p>
         <Image
           src="/pareja.webp"
-          alt="banner"
+          // ref={imageRef}
+          priority
+          alt='pareja'
           width={380}
           height={419}
-          className="justify-self-center mt-2 "
+          className='justify-self-center mt-2'
         />
         <section className="col-span-1 text-center mt-3">
           <p className="text-[20px] font-normal text-center ">Save the date</p>
