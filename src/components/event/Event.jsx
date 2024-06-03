@@ -69,17 +69,11 @@ const Event = () => {
             19hs
             </p>
 
-            <button className="text-[15px] font-normal mt-1 mb-10 text-center bg-[#5E5E5E] rounded-[30px] text-[#ffffff] w-[123px] h-[30px]">
+            <button className="text-[15px] font-normal mt-1  text-center bg-[#5E5E5E] rounded-[30px] text-[#ffffff] w-[123px] h-[30px]">
               Como llegar
             </button>
           </section>
-          <Image
-          src="https://i.ibb.co/mXZwXXZ/Rectangle-3.webp"
-          alt="banner"
-          width={391}
-          height={320}
-          className=" col-span-1 justify-self-center "
-          />
+          
         </section>
         
       </section>
