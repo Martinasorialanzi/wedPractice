@@ -7,13 +7,13 @@ const Event = () => {
     <>
   
 
-<section className=" mt-0">
+<section className=" mt-20">
       <section
         id="Evento"
         className="grid w-[100%] justify-center items-center  "
         >
         <section className="col-span-1 justify-self-center ">
-          <p className="text-[20px] lg:text-[30px] font-medium m-10 text-center mb-0 ">
+          <p className="text-[20px] lg:text-[30px] font-medium  text-center mb-0 ">
             Queremos compartir este día con vos
           </p>
         </section>
