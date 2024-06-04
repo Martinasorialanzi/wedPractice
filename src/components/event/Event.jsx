@@ -13,7 +13,7 @@ const Event = () => {
         className="grid w-[100%] justify-center items-center  "
         >
         <section className="col-span-1 justify-self-center ">
-          <p className="text-[20px] lg:text-[40px] font-medium mt-10 text-center mb-0 ">
+          <p className="text-[20px] lg:text-[30px] font-medium m-10 text-center mb-0 ">
             Queremos compartir este día con vos
           </p>
         </section>

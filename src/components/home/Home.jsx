@@ -36,7 +36,7 @@ const Banner = () => {
           alt='pareja'
           width={380}
           height={419}
-          className='justify-self-center mt-2'
+          className='justify-self-center m-10'
         />
         <section className="col-span-1 text-center mt-3">
           <p className="text-[20px] font-normal text-center ">Save the date</p>
