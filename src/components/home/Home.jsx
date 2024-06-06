@@ -27,24 +27,30 @@ const Banner = () => {
     <>
       
 
-      <section className="grid w-[100%] justify-center items-center mt-5  ">
-        <p className="text-[25px] lg:text-[40px] font-medium text-center">Nombre & Nombre</p>
+      <section className="grid w-full justify-center items-center   ">
+      <div className="relative bg-gradient-to-t from-transparent to-[#000000]  ">
+        <p className="absolute w-full mt-5 text-[30px] lg:text-[40px] font-medium text-center  ">Nombre & Nombre</p>
+        
         <Image
           src="/pareja.webp"
           // ref={imageRef}
           priority
           alt='pareja'
-          width={380}
-          height={419}
-          className='justify-self-center m-10'
+          width={window.innerWidth}
+          height={418}
+          className=' justify-self-center'
+          
         />
-        <section className="col-span-1 text-center mt-3">
+       
+        
+        <section className=" w-full col-span-1 text-center mt-3">
           <p className="text-[20px] font-normal text-center ">Save the date</p>
           <p className="text-[15px] font-normal text-center ">
             2 de Noviembre de 2023
           </p>
          <Counter />
         </section>
+        </div>
       </section>
     </>
   );
