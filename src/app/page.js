@@ -4,9 +4,11 @@ import Banner from "@/components/home/Home";
 import Mas from "@/components/mas/Mas";
 import Regalos from "@/components/regalos/Regalos";
 
+
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between mt-5 mx-3 ">
+    <main className="flex min-h-screen flex-col items-center justify-between  ">
       <Banner />
       <Event />
       <Confirmation />
