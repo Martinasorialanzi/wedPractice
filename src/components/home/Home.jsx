@@ -28,11 +28,11 @@ const Banner = () => {
       
 
       <section className="grid w-full justify-center items-center   ">
-      <div className="relative bg-gradient-to-t from-transparent to-[#000000]  ">
+      <div className="relative bg-gradient-to-t from-transparent to-[#ffffff]  ">
         <p className="absolute w-full mt-5 text-[30px] lg:text-[40px] font-medium text-center  ">Nombre & Nombre</p>
         
         <Image
-          src="/pareja.webp"
+          src="/wedd.png"
           // ref={imageRef}
           priority
           alt='pareja'
