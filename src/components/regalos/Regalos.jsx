@@ -5,6 +5,13 @@ import React from 'react'
 const Regalos = () => {
   return (
     <section id='Regalos'className="grid grid-cols-1 w-[100%] justify-center items-center  mt-20 lg:px-[250px] lg:m-20 ">
+      <Image
+            src='/gift.png'
+            alt='icono iglesia'
+            width={70}
+          height={36}
+            className="mx-auto col-span-1 justify-self-center "
+            />
     <p className=" text-[20px] lg:text-[30px] font-normal text-center   ">Si queres hacernos un regalo </p>
     <section className="grid grid-cols-2 mx-5 lg:px-20 lg:py-10 ">
     <Image

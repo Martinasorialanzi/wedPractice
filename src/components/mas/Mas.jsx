@@ -60,7 +60,7 @@ const Mas = () => {
             Recuerdos
           </p>
           <p className="lg:text-[20px] font-normal  my-4 text-[15px]">
-            En este link podes compartirnos y ver fotos del evento
+            Acá podes compartirnos y ver fotos del evento
           </p>
           <div className="flex justify-center items-center">
           <button className="text-[15px] font-normal mt-1  text-center bg-[#5E5E5E] rounded-[30px] text-[#ffffff] w-[123px] h-[30px]">
