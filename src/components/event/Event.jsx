@@ -7,7 +7,7 @@ const Event = () => {
     <>
   
 
-<section className=" mt-20">
+<section className=" mt-10">
       <section
         id="Evento"
         className="grid w-[100%] justify-center items-center  "
