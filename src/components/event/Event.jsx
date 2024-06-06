@@ -55,7 +55,7 @@ const Event = () => {
           </section>
           <section className="mt-3 text-center" >
           <Image
-            src='/fiesta.png'
+            src='/cheers.png'
             alt='icono fiesta'
             width={70}
           height={70}
