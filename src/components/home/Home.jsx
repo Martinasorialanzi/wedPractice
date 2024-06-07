@@ -3,26 +3,10 @@
 import Image from "next/image";
 import React, { useState, useRef, useEffect } from 'react';
 import Counter from "./Counter";
+import useWindowSize from "../../utils/useWindowSize"
 
 const Banner = () => {
-
-  // const imageRef = useRef(null);
-  // const [isVisible, setIsVisible] = useState(false);
-
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver((entries) => {
-  //     const entry = entries[0];
-  //     setIsVisible(entry.isIntersecting); // Trigger animation based on visibility
-  //   }, { threshold: 0.75 }); // Observe when 25% of the image is in the viewport
-
-  //   if (imageRef.current) {
-  //     observer.observe(imageRef.current);
-  //   }
-
-  //   return () => observer.disconnect(); // Cleanup on unmount
-  // }, [imageRef]);
-
-
+  const { width } = useWindowSize();
   return (
     <>
       
@@ -36,7 +20,7 @@ const Banner = () => {
           // ref={imageRef}
           priority
           alt='pareja'
-          width={window.innerWidth}
+          width={width}
           height={418}
           className=' justify-self-center'
           
