@@ -7,6 +7,8 @@ import useWindowSize from "../../utils/useWindowSize"
 
 const Banner = () => {
   const { width } = useWindowSize();
+  const imageUrl = width < 768? "/wedd.png" : "/wedd-mobile.png";
+
   return (
     <>
       
@@ -16,14 +18,12 @@ const Banner = () => {
         <p className="absolute w-full mt-5 text-[30px] lg:text-[40px] font-medium text-center  ">Nombre & Nombre</p>
         
         <Image
-          src="/wedd.png"
-          // ref={imageRef}
+          src={imageUrl}
           priority
           alt='pareja'
           width={width}
           height={418}
-          className=' justify-self-center'
-          
+          className='justify-self-center'
         />
        
         
