@@ -5,7 +5,7 @@ const Confirmation = () => {
   return (
     <section
       id="Confirmación"
-      className="col-span-1 justify-self-center text-center p-[0px] lg:px-[250px] mt-20 lg:mt-20 "
+      className="col-span-1 justify-self-center text-center p-[0px] lg:px-[250px] my-3 mt-10 "
     >
       <Image
         src="/rsvp.png"
