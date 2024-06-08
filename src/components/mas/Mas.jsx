@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 
 const Mas = () => {
@@ -37,7 +38,7 @@ const Mas = () => {
           <div className="flex justify-center items-center">
             <button
               onClick={openModal}
-              className="text-[15px] font-normal my-1 text-center bg-[#5E5E5E] rounded-[30px] text-[#ffffff] w-[123px] h-[30px]"
+              className="text-[15px] font-normal my-1 text-center bg-[#5E5E5E] rounded-[30px] text-[#ffffff] w-[123px] h-[30px] transform transition-transform duration-200 hover:scale-105 hover:bg-[#4a4a4a]"
             >
               Ver
             </button>
@@ -58,9 +59,11 @@ const Mas = () => {
             Queremos crear una playlist inolvidable
           </p>
           <div className="flex justify-center items-center">
-            <button className="text-[15px] font-normal my-1 text-center bg-[#5E5E5E] rounded-[30px] text-[#ffffff] w-[123px] h-[30px]">
+            <Link target="_blank" href={"https://open.spotify.com/playlist/37i9dQZEVXbMMy2roB9myp?si=_sxc0d_kTNWW32BpyQadcg&pi=u-TONuDD0FSg-u"}>
+            <button className="text-[15px] font-normal my-1 text-center bg-[#5E5E5E] rounded-[30px] text-[#ffffff] w-[123px] h-[30px] transform transition-transform duration-200 hover:scale-105 hover:bg-[#4a4a4a]">
               Añadir
             </button>
+            </Link>
           </div>
         </section>
 
@@ -79,9 +82,11 @@ const Mas = () => {
             En este link podes compartirnos y ver fotos del evento
           </p>
           <div className="flex justify-center items-center">
-            <button className="text-[15px] font-normal mt-1 text-center bg-[#5E5E5E] rounded-[30px] text-[#ffffff] w-[123px] h-[30px]">
+            <Link target="_blank" href={"https://drive.google.com/drive/folders/1NNdkgI-3xKHxj6R2vnVzJo7nKox-GSr5?usp=drive_link"}>
+            <button className="text-[15px] font-normal mt-1 text-center bg-[#5E5E5E] rounded-[30px] text-[#ffffff] w-[123px] h-[30px] transform transition-transform duration-200 hover:scale-105 hover:bg-[#4a4a4a]">
               Galeria
             </button>
+            </Link>
           </div>
         </section> 
       </section>
@@ -99,7 +104,7 @@ const Mas = () => {
             <div className="flex justify-center mt-4">
               <button
                 onClick={closeModal}
-                className="text-[15px] font-normal my-1 text-center bg-[#5E5E5E] rounded-[30px] text-[#ffffff] w-[123px] h-[30px]"
+                className="text-[15px] font-normal my-1 text-center bg-[#5E5E5E] rounded-[30px] text-[#ffffff] w-[123px] h-[30px] transform transition-transform duration-200 hover:scale-105 hover:bg-[#4a4a4a]"
               >
                 Cerrar
               </button>
