@@ -43,9 +43,9 @@ const Counter = () => {
   return (
     <div>
       <div className="text-[20px] font-bold text-center ">
-        {countdown.days ? `${countdown.days} dias | ` : ''}
-        {countdown.hours ? `${countdown.hours} horas | ` : ''}
-        {countdown.minutes ? `${countdown.minutes} minutos ` : ''}
+        {countdown.days ? `${countdown.days} dias ` : ''}
+        {countdown.hours ? `| ${countdown.hours} horas ` : ''}
+        {countdown.minutes ? `| ${countdown.minutes} minutos ` : ''}
       </div>
       <p className="text-[15px] lg:text-[30px] font-bold text-center ">
         {countdown.days === 0 && countdown.hours === 0 && countdown.minutes === 0 ? `Llego el dia` : ''}

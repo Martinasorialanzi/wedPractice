@@ -36,7 +36,7 @@ const Regalos = () => {
       <div className="flex justify-center items-center">
         <button
           onClick={openModal}
-          className="text-[15px] font-normal my-1 text-center bg-[#5E5E5E] rounded-[30px] text-[#ffffff] w-[123px] h-[30px]"
+          className="text-[15px] font-normal my-1 text-center bg-[#5E5E5E] rounded-[30px] text-[#ffffff] w-[123px] h-[30px] transform transition-transform duration-200 hover:scale-105 hover:bg-[#4a4a4a]"
         >
           Ver
         </button>
@@ -71,7 +71,7 @@ const Regalos = () => {
             <div className="flex justify-center mt-4">
               <button
                 onClick={closeModal}
-                className="text-[15px] font-normal my-1 text-center bg-[#5E5E5E] rounded-[30px] text-[#ffffff] w-[123px] h-[30px]"
+                className="text-[15px] font-normal my-1 text-center bg-[#5E5E5E] rounded-[30px] text-[#ffffff] w-[123px] h-[30px] transform transition-transform duration-200 hover:scale-105 hover:bg-[#4a4a4a]"
               >
                 Cerrar
               </button>

@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Confirmation = () => {
   return (
@@ -21,9 +22,11 @@ const Confirmation = () => {
         Nuestro festejo no sería lo mismo sin vos. Confirmanos tu presencia a
         traves del enlace.
       </p>
-      <button className="text-[15px] font-normal mt-1  text-center bg-[#5E5E5E] rounded-[30px] text-[#ffffff] w-[123px] h-[30px]">
+      <Link target="_blank" href={"https://docs.google.com/forms/d/e/1FAIpQLScZvrbe-s09VXlI9R-CqH7trlfLHaH_2AgQVfWuelOCFCNOSg/viewform?usp=sf_link"}>
+      <button className="text-[15px] font-normal mt-1  text-center bg-[#5E5E5E] rounded-[30px] text-[#ffffff] w-[123px] h-[30px] transform transition-transform duration-200 hover:scale-105 hover:bg-[#4a4a4a]">
         Confirmar
       </button>
+      </Link>
     </section>
   );
 };
