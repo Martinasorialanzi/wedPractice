@@ -49,7 +49,7 @@ export default function Home() {
         // buttonFiestaClass="" 
       />
        <Confirmation
-        linkConfirmacion="https://example.com/confirmacion"
+        linkConfirmacion="https://docs.google.com/forms/d/e/1FAIpQLScZvrbe-s09VXlI9R-CqH7trlfLHaH_2AgQVfWuelOCFCNOSg/viewform"
         // sectionClass=""
         // imageClass=""
         // titleClass=""
