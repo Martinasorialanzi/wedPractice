@@ -1,26 +1,22 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 
-const Counter = () => {
-  const [targetDate, setTargetDate] = useState(
-    // Ensure your target date is a valid future date and time
-    new Date("November 2, 2024 18:00:00")
-  );
+const Counter = ({ fechaCounter }) => {
+  const [targetDate, setTargetDate] = useState(new Date(fechaCounter)); // Inicializa con la fecha pasada por prop
   const [countdown, setCountdown] = useState(null);
 
   const calculateCountdown = () => {
     const now = new Date();
-    const delta = targetDate.getTime() - now.getTime();
+    const delta = targetDate.getTime() - now.getTime(); // Diferencia en milisegundos entre la fecha objetivo y la fecha actual
 
-    // Handle the case where the target date has passed
-    if (delta >= 0) {
-      const days = Math.floor(delta / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((delta % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((delta % (1000 * 60 * 60)) / (1000 * 60));
+    if (delta > 0) {
+      const days = Math.floor(delta / (1000 * 60 * 60 * 24)); // Días restantes
+      const hours = Math.floor((delta % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)); // Horas restantes
+      const minutes = Math.floor((delta % (1000 * 60 * 60)) / (1000 * 60)); // Minutos restantes
 
       return { days, hours, minutes };
     } else {
-      return { days: 0, hours: 0, minutes: 0 };
+      return { days: 0, hours: 0, minutes: 0 }; // Si ya pasó la fecha
     }
   };
 
@@ -31,13 +27,13 @@ const Counter = () => {
     const interval = setInterval(() => {
       const updatedCountdown = calculateCountdown();
       setCountdown(updatedCountdown);
-    }, 2);
+    }, 1000); // Actualiza cada segundo
 
-    return () => clearInterval(interval);
-  }, [targetDate]);
+    return () => clearInterval(interval); // Limpia el intervalo al desmontar
+  }, [targetDate]); // Escucha cambios en la fecha objetivo
 
   if (countdown === null) {
-    return <div className="text-center"> . . . </div>;
+    return <div className="text-center">. . .</div>;
   }
 
   return (
@@ -48,7 +44,7 @@ const Counter = () => {
         {countdown.minutes ? `| ${countdown.minutes} minutos ` : ''}
       </div>
       <p className="text-[15px] lg:text-[30px] font-bold text-center ">
-        {countdown.days === 0 && countdown.hours === 0 && countdown.minutes === 0 ? `Llego el dia` : ''}
+        {countdown.days === 0 && countdown.hours === 0 && countdown.minutes === 0 ? `¡Llego el día!` : ''}
       </p>
     </div>
   );
