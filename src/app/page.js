@@ -11,6 +11,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between  ">
         <Banner
+        grid
         nombres="Nombre & Nombre"
         fechaCountDown="2 de Noviembre"
         img1={imgSquare1}
