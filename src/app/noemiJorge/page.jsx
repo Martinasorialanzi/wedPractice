@@ -33,7 +33,7 @@ export default function NoemiJorge() {
         // gridContainerClass=""
         // saveTheDateClass=""
         // fechaCountDownClass=""
-        counterSectionClass="mt-5"
+        counterSectionClass="mt-8"
       />
       <Event
         ceremonia={false}
