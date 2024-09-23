@@ -6,6 +6,7 @@
   animation: reveal-image 2s ease-in-out forwards; /* Adjust timing and easing as needed */
 }
 
+
 @keyframes reveal-image {
   from {
     opacity: 0;

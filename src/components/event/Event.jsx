@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import clsx from "clsx";
 
 const Event = ({
   lugarCeremonia,
@@ -29,6 +30,7 @@ const Event = ({
   transform transition-transform duration-200 hover:scale-105 
   ${buttonClassColors}`,
 }) => {
+ 
   return (
     <>
       <section
