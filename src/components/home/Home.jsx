@@ -40,13 +40,21 @@ const Banner = ({
         <p
           className={`lg:text-[30px] md:text-[30px] font-normal my-3 text-[20px] hidden lg:block md:block ${titleClass} ${textColor}`}
         >
-          <p className={tituloClass}>{titulo}</p><br/>
-          <p>{nombres}</p>
+          {titulo && (
+      <>
+        <span className={tituloClass}>{titulo}</span><br />
+      </>
+    )}
+          <span>{nombres}</span>
         </p>
         <div className={`relative ${relativeClass}`}>
           <div className={`block md:hidden ${bannerMobileClass}`}>
             <p className={`absolute w-full mt-5 text-[30px] lg:text-[40px] font-medium text-center ${titleClass} ${textColor}`}>
-            <span className={tituloClass}>{titulo}</span><br/>
+            {titulo && (
+      <>
+        <span className={tituloClass}>{titulo}</span><br />
+      </>
+    )}
             <span>{nombres}</span>
             </p>
             <Image
