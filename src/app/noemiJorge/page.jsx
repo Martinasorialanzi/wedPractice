@@ -17,14 +17,16 @@ export default function NoemiJorge() {
     <main className={`flex min-h-screen flex-col items-center justify-between ${dancing.className}`}>
         <Banner
         grid={true}
-        nombres="Noemí & Jorge"
+        titulo="Nuestra Boda"
+  nombres="Noemi & Jorge"
+  tituloClass='text-[30px]'
         fechaCountDown="11 de Noviembre"
         fechaCounter={"2024-11-30T19:00:00"}
         img2={portada}
         imgPrincipal={portada}
         textColor={textColor}
         // sectionClass=""
-        titleClass="relative text-[40px] font-bold"
+        titleClass="relative text-[50px] font-bold"
         bannerMobileClass='flex flex-col-reverse'
         // relativeClass=""
         // imageClass=""
@@ -57,6 +59,8 @@ export default function NoemiJorge() {
         linkConfirmacion="https://docs.google.com/forms/d/e/1FAIpQLSf1aptWb7hcd3I90TI1fmum1xJnhkBgEmdkGx43RZmP8IRG9w/viewform?usp=sf_link"
         buttonClassColors={`${buttonBgColor} ${buttonTextColor} ${buttonHoverColor}`}
         textColor={textColor}
+        descripcion='Nos gustan los niños pero este evento es solo para adultos. Nuestro festejo no sería lo mismo sin vos. Confirmanos tu presencia a
+        través del enlace.'
         // sectionClass=""
         // imageClass=""
         // titleClass=""
@@ -80,7 +84,7 @@ export default function NoemiJorge() {
         // modalContentClass=""
       />
       <Mas
-        // dresscode="Elegante"
+        dresscode="Formal y Elegante"
         // spotify="https://open.spotify.com/playlist/37i9dQZEVXbMMy2roB9myp?si=_sxc0d_kTNWW32BpyQadcg&pi=u-TONuDD0FSg-u"
         fotos="https://drive.google.com/drive/folders/1NNdkgI-3xKHxj6R2vnVzJo7nKox-GSr5?usp=drive_link"
         buttonClassColors={`${buttonBgColor} ${buttonTextColor} ${buttonHoverColor}`}

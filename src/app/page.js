@@ -68,6 +68,8 @@ export default function Home() {
         linkConfirmacion="https://docs.google.com/forms/d/e/1FAIpQLScZvrbe-s09VXlI9R-CqH7trlfLHaH_2AgQVfWuelOCFCNOSg/viewform"
         buttonClassColors={`${buttonBgColor} ${buttonTextColor} ${buttonHoverColor}`}
         textColor={textColor}
+        descripcion='Nuestro festejo no sería lo mismo sin vos. Confirmanos tu presencia a
+        través del enlace.'
         // sectionClass=""
         // imageClass=""
         // titleClass=""
