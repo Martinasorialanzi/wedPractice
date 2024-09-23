@@ -6,6 +6,7 @@ import Regalos from "@/components/regalos/Regalos";
 import imgSquare1 from "../../public/cuad1.jpeg";
 import imgSquare2 from "/public/cuad2.jpeg";
 import imgSquare3 from "/public/cuad3.jpeg";
+import imgppal from '/public/wedd.png';
 import { Inika } from "next/font/google";
 
 
@@ -27,9 +28,10 @@ export default function Home() {
         img1={imgSquare1}
         img2={imgSquare2}
         img3={imgSquare3}
-        imgPrincipal="/wedd.png" 
+        imgPrincipal={imgppal} 
         fechaCounter={"2024-11-02T18:00:00"}
         textColor={textColor}
+        // bannerMobileClass=''
         // sectionClass=""
         // titleClass=""
         // relativeClass=""

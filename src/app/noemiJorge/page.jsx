@@ -9,8 +9,8 @@ import { Dancing_Script } from "next/font/google";
 const dancing = Dancing_Script({subsets: ["latin"], weight: ["400", "700"] })
 
 export default function NoemiJorge() {
-  const buttonBgColor = "bg-[#587399]";
-  const buttonHoverColor = "hover:bg-[#4a4a4a]";
+  const buttonBgColor = "bg-[#58739980]";
+  const buttonHoverColor = "hover:bg-[#587399]";
   const buttonTextColor = "text-[#ffffff]";
   const textColor = "text-[#587399]";
   return (
@@ -24,13 +24,14 @@ export default function NoemiJorge() {
         imgPrincipal={portada}
         textColor={textColor}
         // sectionClass=""
-        // titleClass=""
+        titleClass="relative text-[40px] font-bold"
+        bannerMobileClass='flex flex-col-reverse'
         // relativeClass=""
         // imageClass=""
         // gridContainerClass=""
         // saveTheDateClass=""
         // fechaCountDownClass=""
-        // counterSectionClass=""
+        counterSectionClass="mt-5"
       />
       <Event
         ceremonia={false}

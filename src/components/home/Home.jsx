@@ -28,6 +28,7 @@ const Banner = ({
   fechaCountDownClass = "",
   counterSectionClass = "",
   counterClass = '',
+  bannerMobileClass = '',
 }) => {
   return (
     <>
@@ -40,11 +41,11 @@ const Banner = ({
           {nombres}
         </p>
         <div className={`relative ${relativeClass}`}>
-          <div className="block md:hidden">
-            <p className={`absolute w-full mt-5 text-[30px] lg:text-[40px] font-medium text-center ${textColor}`}>
+          <div className={`block md:hidden ${bannerMobileClass}`}>
+            <p className={`absolute w-full mt-5 text-[30px] lg:text-[40px] font-medium text-center ${titleClass} ${textColor}`}>
               {nombres}
             </p>
-            <img
+            <Image
               src={imgPrincipal}
               alt="pareja"
              
