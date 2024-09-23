@@ -10,20 +10,24 @@ const Event = ({
   lugarFiesta,
   linkFiesta,
   horarioFiesta,
+  buttonClassColors,
   ceremonia = true,
   fiesta = true,
+  textColor,
   // Props adicionales para estilos personalizados
   sectionClass = "",
   titleClass = "",
   textClass = "",
-  buttonClass = "",
   imageClass = "",
   ceremoniaSectionClass = "",
   fiestaSectionClass = "",
   lugarClass = "",
   horarioClass = "",
-  buttonCeremoniaClass = "",
-  buttonFiestaClass = ""
+  buttonClass = `
+  text-[15px] font-normal my-1 text-center rounded-[30px] 
+  w-[123px] h-[30px] 
+  transform transition-transform duration-200 hover:scale-105 
+  ${buttonClassColors}`,
 }) => {
   return (
     <>
@@ -31,7 +35,7 @@ const Event = ({
         id="Evento"
         className={`w-[100%] justify-center items-center text-center my-3 mt-10 ${sectionClass}`}
       >
-        <p className={`lg:text-[30px] font-normal my-3 text-[20px] ${titleClass}`}>
+        <p className={`lg:text-[30px] font-normal my-3 text-[20px] ${titleClass} ${textColor}`}>
           Queremos compartir este día con vos
         </p>
 
@@ -44,18 +48,18 @@ const Event = ({
               height={36}
               className={`mx-auto block my-3 mt-10 ${imageClass}`}
             />
-            <p className={`lg:text-[20px] font-normal my-3 text-[15px] ${textClass}`}>
+            <p className={`lg:text-[20px] font-normal my-3 text-[15px] ${textClass} ${textColor}`}>
               Ceremonia
             </p>
-            <p className={`text-[14px] font-normal mt-1 text-center ${lugarClass}`}>
+            <p className={`text-[14px] font-normal mt-1 text-center ${lugarClass} ${textColor}`}>
               {lugarCeremonia}
             </p>
-            <p className={`text-[14px] font-normal text-center ${horarioClass}`}>
+            <p className={`text-[14px] font-normal text-center ${horarioClass} ${textColor}`}>
               {horarioCeremonia}
             </p>
             <Link target="_blank" href={linkCeremonia}>
               <button
-                className={`text-[15px] font-normal my-1 text-center bg-[#5E5E5E] rounded-[30px] text-[#ffffff] w-[123px] h-[30px] transform transition-transform duration-200 hover:scale-105 hover:bg-[#4a4a4a] ${buttonClass} ${buttonCeremoniaClass}`}
+                className={buttonClass}
               >
                 Como llegar
               </button>
@@ -72,18 +76,18 @@ const Event = ({
               height={70}
               className={`mx-auto block my-3 mt-10 ${imageClass}`}
             />
-            <p className={`lg:text-[20px] font-normal my-3 text-[15px] ${textClass}`}>
+            <p className={`lg:text-[20px] font-normal my-3 text-[15px] ${textClass} ${textColor}`}>
               Fiesta
             </p>
-            <p className={`text-[14px] font-normal mt-1 text-center ${lugarClass}`}>
+            <p className={`text-[14px] font-normal mt-1 text-center ${lugarClass} ${textColor}`}>
               {lugarFiesta}
             </p>
-            <p className={`text-[14px] font-normal text-center ${horarioClass}`}>
+            <p className={`text-[14px] font-normal text-center ${horarioClass} ${textColor}`}>
               {horarioFiesta}
             </p>
             <Link target="_blank" href={linkFiesta}>
               <button
-                className={`text-[15px] font-normal my-1 text-center bg-[#5E5E5E] rounded-[30px] text-[#ffffff] w-[123px] h-[30px] transform transition-transform duration-200 hover:scale-105 hover:bg-[#4a4a4a] ${buttonClass} ${buttonFiestaClass}`}
+                className={buttonClass}
               >
                 Como llegar
               </button>

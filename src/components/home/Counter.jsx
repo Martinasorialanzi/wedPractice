@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 
-const Counter = ({ fechaCounter }) => {
+const Counter = ({ fechaCounter, counterStyle }) => {
   const [targetDate, setTargetDate] = useState(new Date(fechaCounter)); // Inicializa con la fecha pasada por prop
   const [countdown, setCountdown] = useState(null);
 
@@ -38,12 +38,12 @@ const Counter = ({ fechaCounter }) => {
 
   return (
     <div>
-      <div className="text-[20px] font-bold text-center ">
+      <div className={`text-[20px] font-bold text-center ${counterStyle} `}>
         {countdown.days ? `${countdown.days} dias ` : ''}
         {countdown.hours ? `| ${countdown.hours} horas ` : ''}
         {countdown.minutes ? `| ${countdown.minutes} minutos ` : ''}
       </div>
-      <p className="text-[15px] lg:text-[30px] font-bold text-center ">
+      <p className={`text-[15px] lg:text-[30px] font-bold text-center ${counterStyle} `}>
         {countdown.days === 0 && countdown.hours === 0 && countdown.minutes === 0 ? `¡Llego el día!` : ''}
       </p>
     </div>

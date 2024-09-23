@@ -3,15 +3,18 @@ import Event from "@/components/event/Event";
 import Banner from "@/components/home/Home";
 import Mas from "@/components/mas/Mas";
 import Regalos from "@/components/regalos/Regalos";
+import portada from './assets/portada.jpeg';
 
 export default function NoemiJorge() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between  ">
         <Banner
-        grid={false}
+        grid={true}
         nombres="Noemí & Jorge"
         fechaCountDown="11 de Noviembre"
         fechaCounter={"2024-11-30T19:00:00"}
+        img2={portada}
+        imgPrincipal={portada}
         // sectionClass=""
         // titleClass=""
         // relativeClass=""

@@ -14,8 +14,10 @@ const Banner = ({
   img1,
   img2,
   img3,
+  imgPrincipal,
   fechaCounter,
   grid = true,
+  textColor,
   // Props adicionales para estilos personalizados
   sectionClass = "",
   titleClass = "",
@@ -24,7 +26,8 @@ const Banner = ({
   gridContainerClass = "",
   saveTheDateClass = "",
   fechaCountDownClass = "",
-  counterSectionClass = ""
+  counterSectionClass = "",
+  counterClass = '',
 }) => {
   return (
     <>
@@ -32,19 +35,21 @@ const Banner = ({
         className={`w-[100%] justify-center items-center text-center my-3 mt-0 md:mt-10 lg:mt-10 ${sectionClass}`}
       >
         <p
-          className={`lg:text-[30px] md:text-[30px] font-normal my-3 text-[20px] hidden lg:block md:block ${titleClass}`}
+          className={`lg:text-[30px] md:text-[30px] font-normal my-3 text-[20px] hidden lg:block md:block ${titleClass} ${textColor}`}
         >
           {nombres}
         </p>
         <div className={`relative ${relativeClass}`}>
           <div className="block md:hidden">
-            <p className="absolute w-full mt-5 text-[30px] lg:text-[40px] font-medium text-center">
+            <p className={`absolute w-full mt-5 text-[30px] lg:text-[40px] font-medium text-center ${textColor}`}>
               {nombres}
             </p>
             <img
-              src="/wedd.png"
+              src={imgPrincipal}
               alt="pareja"
+             
               className={`w-full object-cover ${imageClass}`}
+             
             />
           </div>
 
@@ -55,13 +60,13 @@ const Banner = ({
           ) : null}
 
           <section className={`my-3 mt-20 ${counterSectionClass}`}>
-            <p className={`text-[20px] font-normal text-center ${saveTheDateClass}`}>
+            <p className={`text-[20px] font-normal text-center ${saveTheDateClass} ${textColor}`}>
               Save the date
             </p>
-            <p className={`text-[15px] font-normal text-center ${fechaCountDownClass}`}>
+            <p className={`text-[15px] font-normal text-center ${fechaCountDownClass} ${textColor}`}>
               {fechaCountDown}
             </p>
-            <Counter fechaCounter={fechaCounter} />
+            <Counter fechaCounter={fechaCounter} counterStyle={`${textColor} ${counterClass}`}/>
           </section>
         </div>
       </section>
