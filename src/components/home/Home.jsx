@@ -41,28 +41,28 @@ const Banner = ({
           className={`lg:text-[30px] md:text-[30px] font-normal my-3 text-[20px] hidden lg:block md:block ${titleClass} ${textColor}`}
         >
           {titulo && (
-      <>
-        <span className={tituloClass}>{titulo}</span><br />
-      </>
-    )}
+            <>
+              <span className={tituloClass}>{titulo}</span><br />
+            </>
+          )}
           <span>{nombres}</span>
         </p>
         <div className={`relative ${relativeClass}`}>
           <div className={`block md:hidden ${bannerMobileClass}`}>
             <p className={`absolute w-full mt-5 text-[30px] lg:text-[40px] font-medium text-center ${titleClass} ${textColor}`}>
-            {titulo && (
-      <>
-        <span className={tituloClass}>{titulo}</span><br />
-      </>
-    )}
-            <span>{nombres}</span>
+              {titulo && (
+                <>
+                  <span className={tituloClass}>{titulo}</span><br />
+                </>
+              )}
+              <span>{nombres}</span>
             </p>
             <Image
               src={imgPrincipal}
               alt="pareja"
-             
+
               className={`w-full object-cover ${imageClass}`}
-             
+
             />
           </div>
 
@@ -79,7 +79,7 @@ const Banner = ({
             <p className={`text-[15px] font-normal text-center ${fechaCountDownClass} ${textColor}`}>
               {fechaCountDown}
             </p>
-            <Counter fechaCounter={fechaCounter} counterStyle={`${textColor} ${counterClass}`}/>
+            <Counter fechaCounter={fechaCounter} counterStyle={`${textColor} ${counterClass}`} />
           </section>
         </div>
       </section>
