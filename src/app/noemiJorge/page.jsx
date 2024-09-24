@@ -93,7 +93,7 @@ export default function NoemiJorge() {
       />
       <Regalos
         iconColor={iconColor}
-        alias="Mi Alias"
+        cbu="4530000800014383359592"
         img1="https://i.ibb.co/pb4kXxr/adversal.webp"
         img2="https://i.ibb.co/9pHQws1/Vector.webp"
         regaloLista={false}

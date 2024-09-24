@@ -23,6 +23,7 @@ const Regalos = ({
   ${buttonClassColors}`,
   modalBackgroundClass = "fixed inset-0 bg-black opacity-50",
   modalContentClass = "bg-white rounded-lg p-6 z-10",
+  cbu
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -80,7 +81,8 @@ const Regalos = ({
             )}
             {regaloAlias && (
               <p className="text-[14px] lg:text-[20px] mt-4 font-normal text-center">
-                Alias: {alias}
+                {alias?  `Alias: ${alias}` : `CBU: ${cbu}` }
+               
               </p>
             )}
             <div className="flex justify-center mt-4">
