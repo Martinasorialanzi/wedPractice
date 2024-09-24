@@ -41,7 +41,7 @@ const Regalos = ({
         podés colaborar en:
       </p>
       <div className="flex justify-center items-center">
-        <button onClick={openModal} className={buttonClass}>
+        <button onClick={openModal} className={`text-[15px] font-normal mt-1 text-center bg-[#5E5E5E] rounded-[30px] text-[#ffffff] w-[123px] h-[30px] transform transition-transform duration-200 hover:scale-105 hover:bg-[#4a4a4a] ${buttonClass}`}>
           Ver
         </button>
       </div>
@@ -80,7 +80,7 @@ const Regalos = ({
             <div className="flex justify-center mt-4">
               <button
                 onClick={closeModal}
-                className={buttonClass}
+                className={`text-[15px] font-normal mt-1 text-center bg-[#5E5E5E] rounded-[30px] text-[#ffffff] w-[123px] h-[30px] transform transition-transform duration-200 hover:scale-105 hover:bg-[#4a4a4a] ${buttonClass}`}
               >
                 Cerrar
               </button>

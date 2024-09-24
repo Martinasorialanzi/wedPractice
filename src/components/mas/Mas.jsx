@@ -35,12 +35,12 @@ const Mas = ({
               alt="spotify"
               width={45}
               height={50}
-              className={imageClass}
+              className={`mx-auto block my-3 mt-10 ${imageClass}`}
             />
             <p className={titleClass}>Dresscode</p>
             <p className={descriptionClass}>Te compartimos una sugerencia:</p>
             <div className="flex justify-center items-center">
-              <button onClick={openModal} className={buttonClass}>
+              <button onClick={openModal} className={`text-[15px] font-normal mt-1 text-center bg-[#5E5E5E] rounded-[30px] text-[#ffffff] w-[123px] h-[30px] transform transition-transform duration-200 hover:scale-105 hover:bg-[#4a4a4a] ${buttonClass}`}>
                 Ver
               </button>
             </div>
@@ -53,7 +53,7 @@ const Mas = ({
               alt="spotify"
               width={39}
               height={39}
-              className="mx-auto block"
+              className={`mx-auto block my-3 mt-10 ${imageClass}`}
             />
             <p className={titleClass}>Canciones que no pueden faltar</p>
             <p className={descriptionClass}>
@@ -61,7 +61,7 @@ const Mas = ({
             </p>
             <div className="flex justify-center items-center">
               <Link target="_blank" href={spotify}>
-                <button className={buttonClass}>Añadir</button>
+                <button className={`text-[15px] font-normal mt-1 text-center bg-[#5E5E5E] rounded-[30px] text-[#ffffff] w-[123px] h-[30px] transform transition-transform duration-200 hover:scale-105 hover:bg-[#4a4a4a] ${buttonClass}`}>Añadir</button>
               </Link>
             </div>
           </section>
@@ -74,7 +74,7 @@ const Mas = ({
               alt="spotify"
               width={75}
               height={50}
-              className={imageClass}
+              className={`mx-auto block my-3 mt-10 ${imageClass}`}
             />
             <p className={titleClass}>Recuerdos</p>
             <p className={descriptionClass}>
@@ -82,7 +82,7 @@ const Mas = ({
             </p>
             <div className="flex justify-center items-center">
               <Link target="_blank" href={fotos}>
-                <button className={buttonClass}>Galería</button>
+                <button className={`text-[15px] font-normal mt-1 text-center bg-[#5E5E5E] rounded-[30px] text-[#ffffff] w-[123px] h-[30px] transform transition-transform duration-200 hover:scale-105 hover:bg-[#4a4a4a] ${buttonClass}`}>Galería</button>
               </Link>
             </div>
           </section>
@@ -97,7 +97,7 @@ const Mas = ({
               {dresscode}
             </p>
             <div className="flex justify-center mt-4">
-              <button onClick={closeModal} className={buttonClass}>
+              <button onClick={closeModal} className={`text-[15px] font-normal mt-1 text-center bg-[#5E5E5E] rounded-[30px] text-[#ffffff] w-[123px] h-[30px] transform transition-transform duration-200 hover:scale-105 hover:bg-[#4a4a4a] ${buttonClass}`}>
                 Cerrar
               </button>
             </div>

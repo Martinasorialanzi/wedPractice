@@ -8,6 +8,7 @@ import React from "react";
 import Counter from "./Counter";
 import Grid from "./Grid";
 
+
 const Banner = ({
   nombres,
   fechaCountDown,
@@ -17,48 +18,52 @@ const Banner = ({
   fechaCounter,
   grid = true,
   // Props adicionales para estilos personalizados
-  sectionClass = "",
-  titleClass = "",
-  relativeClass = "",
-  imageClass = "",
-  gridContainerClass = "",
-  saveTheDateClass = "",
-  fechaCountDownClass = "",
-  counterSectionClass = ""
+  sectionClass = "w-[100%] justify-center items-center text-center my-3 mt-0 md:mt-10 lg:mt-10",
+  titleClass = "lg:text-[30px] md:text-[30px] font-normal my-3 text-[20px] hidden lg:block md:block ",
+  relativeClass = "relative",
+  imageClass = "w-full object-cover ",
+  gridContainerClass = "hidden md:block mt-16",
+  saveTheDateClass = "text-[20px] font-normal text-center ",
+  fechaCountDownClass = "text-[15px] font-normal text-center",
+  counterSectionClass = "my-3 mt-20",
+  imageResponsive= true
 }) => {
   return (
     <>
       <section
-        className={`w-[100%] justify-center items-center text-center my-3 mt-0 md:mt-10 lg:mt-10 ${sectionClass}`}
+        className={`lg:text-[30px] md:text-[30px] font-normal my-3 text-[20px] hidden lg:block md:block  ${sectionClass}`}
       >
         <p
-          className={`lg:text-[30px] md:text-[30px] font-normal my-3 text-[20px] hidden lg:block md:block ${titleClass}`}
+          className={`${titleClass}`}
         >
           {nombres}
         </p>
-        <div className={`relative ${relativeClass}`}>
+        <div className={` ${relativeClass}`}>
+        {imageResponsive? (
           <div className="block md:hidden">
             <p className="absolute w-full mt-5 text-[30px] lg:text-[40px] font-medium text-center">
               {nombres}
             </p>
             <img
-              src="/wedd.png"
+              src={imageResponsive}
               alt="pareja"
-              className={`w-full object-cover ${imageClass}`}
+              className={`${imageClass}`}
             />
           </div>
 
+        ): null }
+
           {grid ? (
-            <div className={`hidden md:block mt-16 ${gridContainerClass}`}>
+            <div className={` ${gridContainerClass}`}>
               <Grid img1={img1} img2={img2} img3={img3} />
             </div>
           ) : null}
 
-          <section className={`my-3 mt-20 ${counterSectionClass}`}>
-            <p className={`text-[20px] font-normal text-center ${saveTheDateClass}`}>
+          <section className={` ${counterSectionClass}`}>
+            <p className={`${saveTheDateClass}`}>
               Save the date
             </p>
-            <p className={`text-[15px] font-normal text-center ${fechaCountDownClass}`}>
+            <p className={` ${fechaCountDownClass}`}>
               {fechaCountDown}
             </p>
             <Counter fechaCounter={fechaCounter} />
