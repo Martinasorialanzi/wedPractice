@@ -106,7 +106,7 @@ export default function NoemiJorge() {
         descriptionClass={`lg:text-[23px] font-normal m-4 text-[20px] ${textColor}`}
         // buttonClass=""
         // modalBackgroundClass=""
-        modalContentClass={`bg-white rounded-lg p-6 z-10 lg:p-10 lg:text-[23px] font-normal m-4 text-[20px] ${textColor}`}
+        modalContentClass={`bg-white rounded-lg p-6 z-10 lg:p-10 lg:text-[23px] font-normal m-4 text-[23px] ${textColor}`}
       />
       <Mas
         iconColor={iconColor}
@@ -121,7 +121,7 @@ export default function NoemiJorge() {
         descriptionClass={`lg:text-[23px] font-normal m-4 text-[20px] ${textColor}`}
         // buttonClass=""
         // modalBackgroundClass=""
-        modalContentClass={`bg-white rounded-lg p-6 z-10 lg:p-10 lg:text-[23px] font-normal m-4 text-[20px] ${textColor}`}
+        modalContentClass={`bg-white rounded-lg p-6 z-10 lg:p-10 lg:text-[23px] font-normal m-4 text-[23px] ${textColor}`}
       />
    
     </main>
