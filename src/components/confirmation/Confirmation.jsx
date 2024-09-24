@@ -1,9 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-
+import { PiCalendarCheckThin } from "react-icons/pi";
 
 const Confirmation = ({
+  iconColor,
   linkConfirmacion,
   textColor,
   descripcion,
@@ -20,17 +21,13 @@ const Confirmation = ({
 }) => {
   return (
     <section id="Confirmación" className={sectionClass}>
-      <Image
-        src="/rsvp.png"
-        alt="icono iglesia"
-        width={60}
-        height={36}
-        className={imageClass}
+      <PiCalendarCheckThin
+        style={{ width: "3rem", height: "3rem" }}
+        className="mx-auto block my-3 mt-10"
+        color={iconColor}
       />
       <p className={titleClass}>Esperamos tu confirmación</p>
-      <p className={descriptionClass}>
-        {descripcion}
-      </p>
+      <p className={descriptionClass}>{descripcion}</p>
       <Link target="_blank" href={linkConfirmacion}>
         <button className={buttonClass}>Confirmar</button>
       </Link>
