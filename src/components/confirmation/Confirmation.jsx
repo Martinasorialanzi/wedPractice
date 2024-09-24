@@ -8,7 +8,7 @@ const Confirmation = ({
   linkConfirmacion,
   textColor,
   descripcion,
-  sectionClass = "col-span-1 justify-self-center text-center p-[0px] lg:px-[250px] my-3 mt-10",
+  sectionClass = "col-span-1 justify-self-center text-center p-[0px] lg:px-[250px] my-3 ",
   imageClass = "mx-auto col-span-1 justify-self-center",
   titleClass = `lg:text-[30px] font-normal text-[20px] ${textColor}`,
   descriptionClass = `lg:text-[20px] font-normal m-4 text-[14px] ${textColor}`,
@@ -28,7 +28,7 @@ const Confirmation = ({
       />
       <p className={titleClass}>Esperamos tu confirmación</p>
       <p className={descriptionClass}>{descripcion}</p>
-      <Link target="_blank" href={linkConfirmacion}>
+      <Link target="_blank" href={linkConfirmacion?? "/"}>
         <button className={buttonClass}>Confirmar</button>
       </Link>
     </section>

@@ -70,7 +70,7 @@ const Event = ({
             >
               {horarioCeremonia}
             </p>
-            <Link target="_blank" href={linkCeremonia}>
+            <Link target="_blank" href={linkCeremonia ?? "/"}>
               <button className={buttonClass}>Como llegar</button>
             </Link>
           </section>
@@ -98,7 +98,7 @@ const Event = ({
             >
               {horarioFiesta}
             </p>
-            <Link target="_blank" href={linkFiesta}>
+            <Link target="_blank" href={linkFiesta ?? "/"}>
               <button className={buttonClass}>Como llegar</button>
             </Link>
           </section>
@@ -126,7 +126,7 @@ const Event = ({
             >
               {horarioExtra}
             </p>
-            <Link target="_blank" href={linkExtra}>
+            <Link target="_blank" href={linkExtra ?? "/"}>
               <button className={buttonClass}>Como llegar</button>
             </Link>
           </section>
