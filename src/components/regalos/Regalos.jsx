@@ -1,9 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-
+import { PiGiftThin } from "react-icons/pi";
 
 const Regalos = ({
+  iconColor,
   regaloLista = true,
   regaloAlias = true,
   alias,
@@ -33,16 +34,12 @@ const Regalos = ({
     setIsModalOpen(false);
   };
 
-  
-
   return (
     <section id="Regalos" className={sectionClass}>
-      <Image
-        src="/gift.png"
-        alt="icono regalo"
-        width={70}
-        height={36}
-        className={imageClass}
+      <PiGiftThin
+        style={{ width: "3rem", height: "3rem" }}
+        className="mx-auto block my-3 mt-10"
+        color={iconColor}
       />
       <p className={titleClass}>Si querés hacernos un regalo</p>
       <p className={descriptionClass}>
@@ -50,7 +47,7 @@ const Regalos = ({
         podés colaborar en:
       </p>
       <div className="flex justify-center items-center">
-        <button onClick={openModal} className={buttonClass} >
+        <button onClick={openModal} className={buttonClass}>
           Ver
         </button>
       </div>
@@ -87,10 +84,7 @@ const Regalos = ({
               </p>
             )}
             <div className="flex justify-center mt-4">
-              <button
-                onClick={closeModal}
-                className={buttonClass}
-              >
+              <button onClick={closeModal} className={buttonClass}>
                 Cerrar
               </button>
             </div>

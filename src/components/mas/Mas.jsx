@@ -2,9 +2,14 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-
+import {
+  PiCoatHangerThin,
+  PiSpotifyLogoLight,
+  PiCameraLight,
+} from "react-icons/pi";
 
 const Mas = ({
+  iconColor,
   dresscode,
   spotify,
   fotos,
@@ -37,14 +42,12 @@ const Mas = ({
       <section id="Más" className={sectionClass}>
         {dresscode && (
           <section>
-            <Image
-              src="/dresscode.png"
-              alt="spotify"
-              width={45}
-              height={50}
-              className={imageClass}
+            <PiCoatHangerThin
+              style={{ width: "3rem", height: "3rem" }}
+              className="mx-auto block my-3 mt-10"
+              color={iconColor}
             />
-            <p className={{titleClass} }>Dresscode</p>
+            <p className={titleClass}>Dresscode</p>
             <p className={descriptionClass}>Te compartimos una sugerencia:</p>
             <div className="flex justify-center items-center">
               <button onClick={openModal} className={buttonClass}>
@@ -55,14 +58,12 @@ const Mas = ({
         )}
         {spotify && (
           <section className="my-3 mt-10">
-            <Image
-              src="/spotify.png"
-              alt="spotify"
-              width={39}
-              height={39}
-              className="mx-auto block"
+            <PiSpotifyLogoLight
+              style={{ width: "3rem", height: "3rem" }}
+              className="mx-auto block my-3 mt-10"
+              color={iconColor}
             />
-            <p className={titleClass }>Canciones que no pueden faltar</p>
+            <p className={titleClass}>Canciones que no pueden faltar</p>
             <p className={descriptionClass}>
               Queremos crear una playlist inolvidable
             </p>
@@ -76,12 +77,10 @@ const Mas = ({
 
         {fotos && (
           <section className="mb-10">
-            <Image
-              src="/camara.png"
-              alt="spotify"
-              width={75}
-              height={50}
-              className={imageClass}
+            <PiCameraLight
+              style={{ width: "3rem", height: "3rem" }}
+              className="mx-auto block my-3 mt-10"
+              color={iconColor}
             />
             <p className={titleClass}>Recuerdos</p>
             <p className={descriptionClass}>
