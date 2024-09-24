@@ -5,6 +5,7 @@ import Mas from "@/components/mas/Mas";
 import Regalos from "@/components/regalos/Regalos";
 import portada from "./assets/portada.jpeg";
 import { Dancing_Script } from "next/font/google";
+import Footer from "@/components/footer/Footer";
 
 const dancing = Dancing_Script({ subsets: ["latin"], weight: ["400", "700"] });
 
@@ -115,6 +116,8 @@ export default function NoemiJorge() {
         // modalBackgroundClass=""
         // modalContentClass=""
       />
+    <Footer footerClassName="bg-[#58739930]"/>
+   
     </main>
   );
 }
