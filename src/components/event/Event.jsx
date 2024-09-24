@@ -15,7 +15,12 @@ const Event = ({
   buttonClassColors,
   ceremonia = true,
   fiesta = true,
+  extra = true,
   textColor,
+  tituloExtra,
+  lugarExtra,
+  horarioExtra,
+  linkExtra,
   // Props adicionales para estilos personalizados
   sectionClass = "",
   titleClass = `lg:text-[30px] font-normal my-3 text-[20px] ${textColor}`,
@@ -94,6 +99,34 @@ const Event = ({
               {horarioFiesta}
             </p>
             <Link target="_blank" href={linkFiesta}>
+              <button className={buttonClass}>Como llegar</button>
+            </Link>
+          </section>
+        )}
+
+{extra && (
+          <section className={`my-3 mt-10 ${fiestaSectionClass}`}>
+            <PiCheersThin
+              style={{ width: "3rem", height: "3rem" }}
+              className="mx-auto block my-3 mt-10"
+              color={iconColor}
+            />
+            <p
+              className={titleClass}
+            >
+              {tituloExtra}
+            </p>
+            <p
+              className={`text-[14px] font-normal mt-1 text-center ${lugarClass} ${textColor}`}
+            >
+              {lugarExtra}
+            </p>
+            <p
+              className={`text-[14px] font-normal text-center ${horarioClass} ${textColor}`}
+            >
+              {horarioExtra}
+            </p>
+            <Link target="_blank" href={linkExtra}>
               <button className={buttonClass}>Como llegar</button>
             </Link>
           </section>
