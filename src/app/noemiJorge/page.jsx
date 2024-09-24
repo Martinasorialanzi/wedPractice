@@ -66,7 +66,10 @@ export default function NoemiJorge() {
         linkConfirmacion="https://docs.google.com/forms/d/e/1FAIpQLSf1aptWb7hcd3I90TI1fmum1xJnhkBgEmdkGx43RZmP8IRG9w/viewform?usp=sf_link"
         buttonClassColors={`${buttonBgColor} ${buttonTextColor} ${buttonHoverColor}`}
         textColor={textColor}
-        descripcion='Nuestro festejo no sería lo mismo sin vos. Confirmanos tu presencia a
+        descripcion='Los momentos felices de la vida se tornan geniales si
+tenemos la suerte de compartirlo con la familia y amigos
+mas queridos. Tu estas entre ellos, por eso te esperamos
+para festejar y compartir nuestra felicidad juntos. Confirmanos tu presencia a
         través del enlace.'
         // sectionClass=""
         // imageClass=""
