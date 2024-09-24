@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { PiCheersThin, PiChurchThin } from "react-icons/pi";
+import { PiCheersThin, PiChurchThin, PiHeartThin } from "react-icons/pi";
 
 const Event = ({
   iconColor,
@@ -106,7 +106,7 @@ const Event = ({
 
 {extra && (
           <section className={`my-3 mt-10 ${fiestaSectionClass}`}>
-            <PiCheersThin
+            <PiHeartThin
               style={{ width: "3rem", height: "3rem" }}
               className="mx-auto block my-3 mt-10"
               color={iconColor}

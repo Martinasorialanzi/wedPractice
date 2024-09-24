@@ -41,6 +41,8 @@ export default function Home() {
         // fechaCountDownClass=""
         // counterSectionClass=""
         // counterClass = ''
+        divGrid="max-w-4xl "
+        divGridImage="w-1/3"
       />
       <Event
         ceremonia
