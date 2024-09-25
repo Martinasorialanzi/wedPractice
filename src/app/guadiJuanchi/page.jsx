@@ -25,7 +25,7 @@ export default function Home() {
     <>
     <main className={`flex min-h-screen flex-col items-center justify-between ${montserrat.className}`}
     style={{
-        backgroundImage: `url('/guadijuanchy/fondo.png')`,
+        backgroundImage: `url('/guadiJuanchy/fondo.png')`,
         backgroundSize: '100% auto', // Ajusta el ancho al 100% y deja la altura automática
         backgroundRepeat: 'repeat-y', // Repite solo verticalmente
         backgroundPosition: 'top', // La posición inicial es arriba
