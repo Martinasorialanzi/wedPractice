@@ -53,7 +53,7 @@ export default function Home() {
         // gridContainerClass=""
         saveTheDateClass={`${dancing.className} text-[40px]`}
         // fechaCountDownClass=""
-        counterSectionClass="mt-7 mb-10"
+        counterSectionClass="mt-3 mb-10"
         // counterClass = ''
         divGrid="max-w-4xl "
         divGridImage="w-1/3"
