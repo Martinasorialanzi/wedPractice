@@ -15,7 +15,7 @@ const inika = Inika({ subsets: ["latin"], weight: ["400", "700"] });
 
 
 export default function Home() {
-  const buttonBgColor = "bg-[#5E5E5E]";
+  const buttonBgColor = "bg-[#5E5E5E80]";
   const buttonHoverColor = "hover:bg-[#4a4a4a]";
   const buttonTextColor = "text-[#ffffff]";
   const textColor = "text-[#000000]";

@@ -47,13 +47,13 @@ export default function Home() {
         textColor={textColor}
         // bannerMobileClass=''
         // sectionClass=""
-        titleClass="relative mb-2 text-[30px]"
+        titleClass="relative mb-5 text-[40px]"
         // relativeClass=""
         // imageClass=""
         // gridContainerClass=""
         saveTheDateClass={`${dancing.className} text-[40px]`}
         // fechaCountDownClass=""
-        counterSectionClass="mt-4 mb-10"
+        counterSectionClass="mt-7 mb-10"
         // counterClass = ''
         divGrid="max-w-4xl "
         divGridImage="w-1/3"
