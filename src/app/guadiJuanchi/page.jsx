@@ -9,10 +9,14 @@ import imgSquare3 from "./assets/3.webp";
 import imgppal from './assets/1.webp';
 import { Montserrat } from "next/font/google";
 import { Dancing_Script } from "next/font/google";
+import { Great_Vibes } from "next/font/google";
+import { Allura } from "next/font/google";
+import { Satisfy } from "next/font/google";
+import { Parisienne } from "next/font/google";
 
 
 const montserrat = Montserrat({ subsets: ["latin"], weight: ["500", "700"] });
-const dancing = Dancing_Script({ subsets: ["latin"], weight: ["400", "700"] });
+const dancing = Parisienne({ subsets: ["latin"], weight: ["400"] });
 
 
 export default function Home() {
@@ -29,11 +33,11 @@ export default function Home() {
         backgroundSize: '100% auto', // Ajusta el ancho al 100% y deja la altura automática
         backgroundRepeat: 'repeat-y', // Repite solo verticalmente
         backgroundPosition: 'top', // La posición inicial es arriba
-      
+
       }}>
         <Banner
         grid
-        nombres="Guadi y Juanchy"
+        nombres="Guadi y Juanchi"
         fechaCountDown="2 de Noviembre"
         img1={imgSquare1}
         img2={imgSquare2}
@@ -47,7 +51,7 @@ export default function Home() {
         // relativeClass=""
         // imageClass=""
         // gridContainerClass=""
-        saveTheDateClass={`${dancing.className} text-[45px]`}
+        saveTheDateClass={`${dancing.className} text-[40px]`}
         // fechaCountDownClass=""
         counterSectionClass="mt-7 mb-10"
         // counterClass = ''
@@ -92,7 +96,8 @@ export default function Home() {
         
       />
        <Regalos
-        alias="Mi Alias"
+        alias="juanchiyguadi"
+        cbu='0150518401000161269259'
         img1="https://i.ibb.co/pb4kXxr/adversal.webp"
         img2="https://i.ibb.co/9pHQws1/Vector.webp"
         regaloLista={false}
