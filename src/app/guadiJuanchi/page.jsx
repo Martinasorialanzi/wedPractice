@@ -47,13 +47,13 @@ export default function Home() {
         textColor={textColor}
         // bannerMobileClass=''
         // sectionClass=""
-        titleClass="relative mb-5 text-[40px]"
+        titleClass="relative mb-2 text-[30px]"
         // relativeClass=""
         // imageClass=""
         // gridContainerClass=""
         saveTheDateClass={`${dancing.className} text-[40px]`}
         // fechaCountDownClass=""
-        counterSectionClass="mt-7 mb-10"
+        counterSectionClass="mt-4 mb-10"
         // counterClass = ''
         divGrid="max-w-4xl "
         divGridImage="w-1/3"
@@ -96,8 +96,8 @@ export default function Home() {
         
       />
        <Regalos
-        alias="juanchiyguadi"
-        cbu='0150518401000161269259'
+        alias='juanchiyguadi Banco ICBC'
+        cbu='0150518401000161269259 '
         img1="https://i.ibb.co/pb4kXxr/adversal.webp"
         img2="https://i.ibb.co/9pHQws1/Vector.webp"
         regaloLista={false}

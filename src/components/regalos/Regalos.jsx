@@ -35,6 +35,8 @@ const Regalos = ({
     setIsModalOpen(false);
   };
 
+
+
   return (
     <section id="Regalos" className={sectionClass}>
       <PiGiftThin
@@ -81,8 +83,17 @@ const Regalos = ({
             )}
             {regaloAlias && (
               <p className="text-[14px] lg:text-[20px] mt-4 font-normal text-center">
-                {alias?  `Alias: ${alias}` : `CBU: ${cbu}` }
-               
+                {alias && cbu ? (
+                  <>
+                    <p>Alias: {alias}</p>
+                    <p>CBU: {cbu}</p>
+                  </>
+                ) : alias ? (
+                  <p>Alias: {alias}</p>
+                ) : cbu ? (
+                  <p>CBU: {cbu}</p>
+                ) : null}
+
               </p>
             )}
             <div className="flex justify-center mt-4">
