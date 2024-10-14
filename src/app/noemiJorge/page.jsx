@@ -53,11 +53,11 @@ export default function NoemiJorge() {
         iconColor={iconColor}
         lugarFiesta="Finca Helvecia"
         linkFiesta="https://www.google.com/maps/place/Finca+Helvecia/@-27.229575,-65.3562433,15z/data=!4m6!3m5!1s0x9423b1c826e9a8ed:0x592654f7011510e5!8m2!3d-27.229575!4d-65.3562433!16s%2Fg%2F11sgdmmyl6?entry=ttu&g_ep=EgoyMDI0MDkxNS4wIKXMDSoASAFQAw%3D%3D"
-        horarioFiesta="19hs"
+        horarioFiesta="20hs"
         Extra
         tituloExtra="Civil y bendicion de anillos y pareja"
         lugarExtra="Finca Helvecia"
-        horarioExtra="20hs"
+        horarioExtra="20:30hs"
         linkExtra="https://www.google.com/maps/place/Finca+Helvecia/@-27.229575,-65.3562433,15z/data=!4m6!3m5!1s0x9423b1c826e9a8ed:0x592654f7011510e5!8m2!3d-27.229575!4d-65.3562433!16s%2Fg%2F11sgdmmyl6?entry=ttu&g_ep=EgoyMDI0MDkxNS4wIKXMDSoASAFQAw%3D%3D"
         buttonClassColors={`${buttonBgColor} ${buttonTextColor} ${buttonHoverColor} text-[17px] lg:text-[20px] lg:w-[150px] lg:h-[40px]`}
         textColor={textColor}
