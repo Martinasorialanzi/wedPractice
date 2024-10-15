@@ -112,7 +112,7 @@ export default function NoemiJorge() {
         iconColor={iconColor}
         dresscode="Formal y Elegante"
         // spotify="https://open.spotify.com/playlist/37i9dQZEVXbMMy2roB9myp?si=_sxc0d_kTNWW32BpyQadcg&pi=u-TONuDD0FSg-u"
-        fotos="https://drive.google.com/drive/folders/1OL7YVZYRzoR4P-TNPvg9ZhCOWjkhNSdH?usp=sharing"
+        fotos="https://drive.google.com/drive/folders/1EeJ3s0Egx4A1Fp5wVNSM8GP34wWPzP_q?usp=sharing"
         buttonClassColors={`${buttonBgColor} ${buttonTextColor} ${buttonHoverColor} text-[17px] lg:text-[20px] lg:w-[150px] lg:h-[40px]`}
         textColor={textColor}
         // sectionClass=""
