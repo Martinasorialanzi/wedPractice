@@ -68,7 +68,7 @@ const Mas = ({
               Queremos crear una playlist inolvidable
             </p>
             <div className="flex justify-center items-center">
-              <Link target="_blank" href={spotify}>
+              <Link target="_blank" href={spotify ?? "/"}>
                 <button className={buttonClass}>Añadir</button>
               </Link>
             </div>
@@ -87,7 +87,7 @@ const Mas = ({
               En este link podés compartirnos y ver fotos del evento
             </p>
             <div className="flex justify-center items-center">
-              <Link target="_blank" href={fotos}>
+              <Link target="_blank" href={fotos ?? "/"}>
                 <button className={buttonClass}>Galería</button>
               </Link>
             </div>

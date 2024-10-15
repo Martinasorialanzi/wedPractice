@@ -31,6 +31,10 @@ const Banner = ({
   counterSectionClass = "",
   counterClass = '',
   bannerMobileClass = '',
+  widthImgBanner="",
+  heightImgBanner="",
+  divGrid="",
+  divGridImage=""
 }) => {
   return (
     <>
@@ -68,7 +72,7 @@ const Banner = ({
 
           {grid ? (
             <div className={`hidden md:block mt-16 ${gridContainerClass}`}>
-              <Grid img1={img1} img2={img2} img3={img3} />
+              <Grid img1={img1} img2={img2} img3={img3} width={widthImgBanner} height={heightImgBanner} divGrid={divGrid} divGridImage={divGridImage}/>
             </div>
           ) : null}
 

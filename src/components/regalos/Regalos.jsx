@@ -23,6 +23,7 @@ const Regalos = ({
   ${buttonClassColors}`,
   modalBackgroundClass = "fixed inset-0 bg-black opacity-50",
   modalContentClass = "bg-white rounded-lg p-6 z-10",
+  cbu
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -33,6 +34,8 @@ const Regalos = ({
   const closeModal = () => {
     setIsModalOpen(false);
   };
+
+
 
   return (
     <section id="Regalos" className={sectionClass}>
@@ -80,7 +83,17 @@ const Regalos = ({
             )}
             {regaloAlias && (
               <p className="text-[14px] lg:text-[20px] mt-4 font-normal text-center">
-                Alias: {alias}
+                {alias && cbu ? (
+                  <>
+                    <p>Alias: {alias}</p>
+                    <p>CBU: {cbu}</p>
+                  </>
+                ) : alias ? (
+                  <p>Alias: {alias}</p>
+                ) : cbu ? (
+                  <p>CBU: {cbu}</p>
+                ) : null}
+
               </p>
             )}
             <div className="flex justify-center mt-4">

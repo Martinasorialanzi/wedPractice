@@ -3,6 +3,7 @@ import Event from "@/components/event/Event";
 import Banner from "@/components/home/Home";
 import Mas from "@/components/mas/Mas";
 import Regalos from "@/components/regalos/Regalos";
+import Footer from "@/components/footer/Footer";
 import imgSquare1 from "../../public/cuad1.jpeg";
 import imgSquare2 from "/public/cuad2.jpeg";
 import imgSquare3 from "/public/cuad3.jpeg";
@@ -14,12 +15,13 @@ const inika = Inika({ subsets: ["latin"], weight: ["400", "700"] });
 
 
 export default function Home() {
-  const buttonBgColor = "bg-[#5E5E5E]";
+  const buttonBgColor = "bg-[#5E5E5E80]";
   const buttonHoverColor = "hover:bg-[#4a4a4a]";
   const buttonTextColor = "text-[#ffffff]";
   const textColor = "text-[#000000]";
 
   return (
+    <>
     <main className={`flex min-h-screen flex-col items-center justify-between ${inika.className}`}>
         <Banner
         grid
@@ -41,8 +43,11 @@ export default function Home() {
         // fechaCountDownClass=""
         // counterSectionClass=""
         // counterClass = ''
+        divGrid="max-w-4xl "
+        divGridImage="w-1/3"
       />
       <Event
+      extra={false}
         ceremonia
         lugarCeremonia="Iglesia Nuestra Señora del Valle"
         linkCeremonia="https://www.google.com/maps/place/Parroquia+Nuestra+Se%C3%B1ora+del+Valle/@-26.815749,-65.293438,16z/data=!4m6!3m5!1s0x942242d62123af13:0xaa2edb3420b1b358!8m2!3d-26.815749!4d-65.293438!16s%2Fg%2F1tfwlfys?hl=es&entry=ttu"
@@ -107,6 +112,9 @@ export default function Home() {
         // modalBackgroundClass=""
         // modalContentClass=""
       />
+      
     </main>
+    <Footer footerClassName={`${buttonBgColor} h-[57px]`}/>
+    </>
   );
 }
