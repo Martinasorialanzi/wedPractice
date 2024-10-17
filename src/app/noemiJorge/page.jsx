@@ -93,7 +93,7 @@ export default function NoemiJorge() {
       />
       <Regalos
         iconColor={iconColor}
-        cbu="4530000800014383359592 a nombre de Jorge Frias, Banco Galicia"
+        cbu="4530000800014383359592 (A nombre de Jorge Frias, Banco Galicia)"
         img1="https://i.ibb.co/pb4kXxr/adversal.webp"
         img2="https://i.ibb.co/9pHQws1/Vector.webp"
         regaloLista={false}
@@ -106,7 +106,7 @@ export default function NoemiJorge() {
         descriptionClass={`lg:text-[23px] font-normal m-4 text-[20px] ${textColor}`}
         // buttonClass=""
         // modalBackgroundClass=""
-        modalContentClass={`bg-white rounded-lg p-6 z-10 lg:p-10 text-[23px] lg:text-[23px] font-normal m-4  w-[59%] ${textColor}`}
+        modalContentClass={`bg-white rounded-lg p-6 z-10 lg:p-10 text-[20px] lg:text-[23px] font-normal m-4  w-[78%] ${textColor}`}
       />
       <Mas
         iconColor={iconColor}

@@ -22,7 +22,7 @@ const Regalos = ({
   transform transition-transform duration-200 hover:scale-105 
   ${buttonClassColors}`,
   modalBackgroundClass = "fixed inset-0 bg-black opacity-50",
-  modalContentClass = "bg-white rounded-lg p-6 z-10",
+  modalContentClass = "text-[14px] lg:text-[20px] bg-white rounded-lg p-6 z-10",
   cbu
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -82,7 +82,7 @@ const Regalos = ({
               </section>
             )}
             {regaloAlias && (
-              <p className="text-[14px] lg:text-[20px] mt-4 font-normal text-center">
+              <p className=" mt-4 font-normal text-center">
                 {alias && cbu ? (
                   <>
                     <p>Alias: {alias}</p>
