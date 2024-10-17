@@ -28,7 +28,7 @@ export default function NoemiJorge() {
         titulo="Nuestra Boda"
         nombres="Noemi & Jorge"
         tituloClass="lg:text-[40px] text-[30px]"
-        fechaCountDown="11 de Noviembre"
+        fechaCountDown="30 de Noviembre"
         fechaCounter={"2024-11-30T19:00:00"}
         img2={portada}
         imgPrincipal={portada}
