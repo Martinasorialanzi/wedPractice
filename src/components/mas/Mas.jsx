@@ -6,13 +6,18 @@ import {
   PiCoatHangerThin,
   PiSpotifyLogoLight,
   PiCameraLight,
+  PiInfoLight, // Nuevo ícono para la sección de más info
 } from "react-icons/pi";
 
 const Mas = ({
   iconColor,
   dresscode,
+  extraInfo,
   spotify,
   fotos,
+  masInfo, // Nueva prop para el enlace o contenido de "Más Info"
+  masInfoTitle = "Más información", // Título personalizable para la sección
+  masInfoDescription = "Toda la información importante sobre nuestro evento", // Descripción personalizable
   textColor,
   sectionClass = "w-[100%] justify-center items-center text-center my-1 lg:px-[25px]",
   imageClass = "mx-auto block my-3 mt-10",
@@ -28,6 +33,7 @@ const Mas = ({
   modalContentClass = "bg-white rounded-lg p-6 z-10",
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [infoModalOpen, setInfoModalOpen] = useState(false); // Estado para el modal de más info
 
   const openModal = () => {
     setIsModalOpen(true);
@@ -35,6 +41,14 @@ const Mas = ({
 
   const closeModal = () => {
     setIsModalOpen(false);
+  };
+
+  const openInfoModal = () => {
+    setInfoModalOpen(true);
+  };
+
+  const closeInfoModal = () => {
+    setInfoModalOpen(false);
   };
 
   return (
@@ -93,6 +107,30 @@ const Mas = ({
             </div>
           </section>
         )}
+
+        {/* Nueva sección de Más Info */}
+        {masInfo && (
+          <section className="mb-10">
+            <PiInfoLight
+              style={{ width: "3rem", height: "3rem" }}
+              className="mx-auto block my-3 mt-10"
+              color={iconColor}
+            />
+            <p className={titleClass}>{masInfoTitle}</p>
+            <p className={descriptionClass}>{masInfoDescription}</p>
+            <div className="flex justify-center items-center">
+              {typeof masInfo === 'string' ? (
+                <Link target="_blank" href={masInfo}>
+                  <button className={buttonClass}>Ver más</button>
+                </Link>
+              ) : (
+                <button onClick={openInfoModal} className={buttonClass}>
+                  Ver más
+                </button>
+              )}
+            </div>
+          </section>
+        )}
       </section>
 
       {isModalOpen && (
@@ -104,6 +142,29 @@ const Mas = ({
             </p>
             <div className="flex justify-center mt-4">
               <button onClick={closeModal} className={buttonClass}>
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Modal para Más Info */}
+      {infoModalOpen && typeof masInfo !== 'string' && (
+        <div className="fixed inset-0 flex items-center justify-center z-50">
+          <div className={modalBackgroundClass} onClick={closeInfoModal}></div>
+          <div className={modalContentClass}>
+            <div className="text-[14px] lg:text-[20px] mt-4 font-normal text-center">
+              {typeof masInfo === 'object' ? masInfo : (
+                <div className="text-left">
+                {extraInfo.split('•').filter(item => item.trim()).map((item, index) => (
+                  <p key={index} className="mb-2">• {item.trim()}</p>
+                ))}
+              </div>
+              )}
+            </div>
+            <div className="flex justify-center mt-4">
+              <button onClick={closeInfoModal} className={buttonClass}>
                 Cerrar
               </button>
             </div>
