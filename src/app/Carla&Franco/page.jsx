@@ -98,7 +98,7 @@ export default function CarlaFranco() {
       />
       <Mas
         dresscode="Elegante"
-        spotify="https://open.spotify.com/playlist/2AtXtjjgraA8opfgobbI4E?si=q5n8C4NTTZ-uryWtLei-rA&pi=5EUDN3p_RDKYR"
+        spotify="https://open.spotify.com/playlist/2AtXtjjgraA8opfgobbI4E?si=M4MP4AibQi2_ikCfKOeMXQ&pi=HjZUqKhdRWq3D&pt=f44140756f0606a0025cb4d6ddad6b62"
         fotos="https://photos.app.goo.gl/UWhmajx21u96enPr7"   
         masInfo
         masInfoDescription="Te dejamos contactos de alquileres y traslados a Villa Nougues"
