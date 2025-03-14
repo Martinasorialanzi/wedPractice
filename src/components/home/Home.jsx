@@ -1,5 +1,3 @@
-// src/components/home/Banner.jsx
-
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
@@ -23,6 +21,7 @@ const Banner = ({
   // Props adicionales para estilos personalizados
   sectionClass = "",
   titleClass = "",
+  mobileTitleClass = "", // Nueva prop para el color del título en móvil
   relativeClass = "",
   imageClass = "",
   gridContainerClass = "",
@@ -42,31 +41,29 @@ const Banner = ({
         className={`w-[100%] justify-center items-center text-center my-3 mt-0 md:mt-10 lg:mt-10 ${sectionClass}`}
       >
         <p
-          className={`lg:text-[30px] md:text-[30px] font-normal my-3 text-[20px] hidden lg:block md:block ${titleClass} ${textColor}`}
+          className={`lg:text-[30px] md:text-[30px] font-normal my-3 text-[20px] hidden lg:block md:block ${textColor}`}
         >
           {titulo && (
             <>
               <span className={tituloClass}>{titulo}</span><br />
             </>
           )}
-          <span>{nombres}</span>
+          <span className={titleClass}>{nombres}</span>
         </p>
         <div className={`relative ${relativeClass}`}>
           <div className={`block md:hidden ${bannerMobileClass}`}>
-            <p className={`absolute w-full mt-5 text-[30px] lg:text-[40px] font-medium text-center ${titleClass} ${textColor}`}>
+            <p className={`absolute w-full mt-5 text-[30px] lg:text-[40px] font-medium text-center ${textColor}`}>
               {titulo && (
                 <>
                   <span className={tituloClass}>{titulo}</span><br />
                 </>
               )}
-              <span>{nombres}</span>
+              <span className={mobileTitleClass || titleClass}>{nombres}</span>
             </p>
             <Image
               src={imgPrincipal}
               alt="pareja"
-
               className={`w-full object-cover ${imageClass}`}
-
             />
           </div>
 
