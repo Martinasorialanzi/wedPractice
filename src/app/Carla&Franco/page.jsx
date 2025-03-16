@@ -53,7 +53,7 @@ export default function CarlaFranco() {
             mobileColor={mobileNameColor} 
             mobileMarginTop="50px" // Aquí puedes ajustar el margen superior
           >
-            Carla & Franco
+            
           </ResponsiveStyledName>
         }
         fechaCountDown="12 de Abril"
