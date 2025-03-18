@@ -11,6 +11,7 @@ const Regalos = ({
   img1,
   img2,
   textColor,
+  descripcion, // Nueva prop para personalizar el texto
   sectionClass = "w-[100%] justify-center items-center text-center my-1 lg:px-[25px] mb-1",
   imageClass = "mx-auto block my-3 mt-10",
   titleClass = `lg:text-[30px] font-normal my-3 text-[20px] ${textColor}`,
@@ -35,8 +36,6 @@ const Regalos = ({
     setIsModalOpen(false);
   };
 
-
-
   return (
     <section id="Regalos" className={sectionClass}>
       <PiGiftThin
@@ -46,8 +45,7 @@ const Regalos = ({
       />
       <p className={titleClass}>Si querés hacernos un regalo</p>
       <p className={descriptionClass}>
-        ¡El mejor regalo es tu presencia! Si deseás realizarnos otro regalo,
-        podés colaborar en:
+        {descripcion || "¡El mejor regalo es tu presencia! Si deseás realizarnos otro regalo, podés colaborar en:"}
       </p>
       <div className="flex justify-center items-center">
         <button onClick={openModal} className={buttonClass}>
@@ -85,11 +83,11 @@ const Regalos = ({
               <p className=" mt-4 font-normal text-center">
                 {alias && cbu ? (
                   <>
-                    <p>Alias: {alias}</p>
+                    <p> {alias}</p>
                     <p>CBU: {cbu}</p>
                   </>
                 ) : alias ? (
-                  <p>Alias: {alias}</p>
+                  <p>{alias}</p>
                 ) : cbu ? (
                   <p>CBU: {cbu}</p>
                 ) : null}

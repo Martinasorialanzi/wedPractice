@@ -75,7 +75,7 @@ const Banner = ({
 
           <section className={`my-3 mt-20 ${counterSectionClass}`}>
             <p className={`text-[20px] font-normal text-center ${saveTheDateClass} ${textColor}`}>
-              Save the date
+              SAVE THE DATE
             </p>
             <p className={`text-[15px] font-normal text-center ${fechaCountDownClass} ${textColor}`}>
               {fechaCountDown}
