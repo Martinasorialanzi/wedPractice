@@ -69,7 +69,7 @@ CUIT/CUIL: 20364204818
           fiesta
           lugarFiesta="Salón Las Marias"
           linkFiesta="https://maps.app.goo.gl/pH1XHRm7yuNYSTS47"
-          horarioFiesta="22:30hs"
+          horarioFiesta="18hs"
           buttonClassColors={`${buttonBgColor} ${buttonTextColor} ${buttonHoverColor}`}
           textColor={textColor}
         />
