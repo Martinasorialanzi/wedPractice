@@ -75,7 +75,7 @@ CUIT/CUIL: 20364204818
         textColor={textColor}
       />
        <Confirmation
-        linkConfirmacion="https://docs.google.com/forms/d/e/1FAIpQLScZvrbe-s09VXlI9R-CqH7trlfLHaH_2AgQVfWuelOCFCNOSg/viewform"
+        linkConfirmacion="https://forms.gle/qBwz6q9ky4M8hTfVA"
         buttonClassColors={`${buttonBgColor} ${buttonTextColor} ${buttonHoverColor}`}
         textColor={textColor}
         descripcion='Nuestro festejo no sería lo mismo sin vos. Confirmanos tu presencia a
