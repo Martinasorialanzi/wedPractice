@@ -88,7 +88,7 @@ export default function CarlaFranco() {
         través del enlace.'
       />
        <Regalos
-        alias="boda.carla.franco"
+        alias="ALIAS: boda.carla.franco"
         regaloLista={true}
         regaloAlias={true}
         buttonClassColors={`${buttonBgColor} ${buttonTextColor} ${buttonHoverColor}`}
