@@ -21,6 +21,8 @@ const Event = ({
   lugarExtra,
   horarioExtra,
   linkExtra,
+  // ✨ Nueva prop para la clase unificada de títulos principales
+  mainTitleClass,
   // Props adicionales para estilos personalizados
   sectionClass = "",
   titleClass = `lg:text-[30px] font-normal my-3 text-[20px] ${textColor}`,
@@ -42,9 +44,8 @@ const Event = ({
         id="Evento"
         className={`w-[100%] justify-center items-center text-center my-3 mt-10 ${sectionClass}`}
       >
-        <p
-          className={`lg:text-[30px] font-normal my-3 text-[20px] ${titleClass} ${textColor}`}
-        >
+        {/* ✨ Título principal usando la clase unificada */}
+        <p className={mainTitleClass || `lg:text-[30px] font-normal my-3 text-[20px] ${textColor}`}>
           Queremos compartir este día con vos
         </p>
 
@@ -55,9 +56,8 @@ const Event = ({
               className="mx-auto block my-3 mt-10"
               color={iconColor}
             />
-            <p
-              className={titleClass}
-            >
+            {/* ✨ Título secundario usando la clase unificada */}
+            <p className={mainTitleClass || titleClass}>
               Ceremonia
             </p>
             <p
@@ -83,9 +83,8 @@ const Event = ({
               className="mx-auto block my-3 mt-10"
               color={iconColor}
             />
-            <p
-              className={titleClass}
-            >
+            {/* ✨ Título secundario usando la clase unificada */}
+            <p className={mainTitleClass || titleClass}>
               Fiesta
             </p>
             <p
@@ -111,9 +110,8 @@ const Event = ({
               className="mx-auto block my-3 mt-10"
               color={iconColor}
             />
-            <p
-              className={titleClass}
-            >
+            {/* ✨ Título secundario usando la clase unificada */}
+            <p className={mainTitleClass || titleClass}>
               {tituloExtra}
             </p>
             <p

@@ -20,7 +20,7 @@ const Banner = ({
   tituloClass,
   // Props adicionales para estilos personalizados
   sectionClass = "",
-  titleClass = "",
+  titleClass = "", // Esta es la clase que viene desde Home.js con Parisienne
   mobileTitleClass = "", // Nueva prop para el color del título en móvil
   relativeClass = "",
   imageClass = "",
@@ -40,6 +40,7 @@ const Banner = ({
       <section
         className={`w-[100%] justify-center items-center text-center my-3 mt-0 md:mt-10 lg:mt-10 ${sectionClass}`}
       >
+        {/* ✨ DESKTOP/TABLET - Nombres con Parisienne */}
         <p
           className={`lg:text-[30px] md:text-[30px] font-normal my-3 text-[20px] hidden lg:block md:block ${textColor}`}
         >
@@ -48,17 +49,21 @@ const Banner = ({
               <span className={tituloClass}>{titulo}</span><br />
             </>
           )}
+          {/* ✨ USA LA CLASE QUE VIENE DESDE HOME.JS */}
           <span className={titleClass}>{nombres}</span>
         </p>
+        
         <div className={`relative ${relativeClass}`}>
+          {/* ✨ MÓVIL - Nombres con Parisienne */}
           <div className={`block md:hidden ${bannerMobileClass}`}>
-            <p className={`absolute w-full mt-5 text-[30px] lg:text-[40px] font-medium text-center ${textColor}`}>
+            <p className={`absolute w-full mt-5 text-[30px] lg:text-[40px] font-medium text-center z-10`}>
               {titulo && (
                 <>
                   <span className={tituloClass}>{titulo}</span><br />
                 </>
               )}
-              <span className={mobileTitleClass || titleClass}>{nombres}</span>
+              {/* ✨ USA LA CLASE QUE VIENE DESDE HOME.JS */}
+              <span className={titleClass}>{nombres}</span>
             </p>
             <Image
               src={imgPrincipal}

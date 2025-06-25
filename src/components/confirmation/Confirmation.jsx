@@ -8,6 +8,8 @@ const Confirmation = ({
   linkConfirmacion,
   textColor,
   descripcion,
+  // ✨ Nueva prop para la clase unificada de títulos principales
+  mainTitleClass,
   sectionClass = "col-span-1 justify-self-center text-center p-[0px] lg:px-[250px] my-3 ",
   imageClass = "mx-auto col-span-1 justify-self-center",
   titleClass = `lg:text-[30px] font-normal text-[20px] ${textColor}`,
@@ -26,7 +28,8 @@ const Confirmation = ({
         className="mx-auto block my-3 mt-10"
         color={iconColor}
       />
-      <p className={titleClass}>Esperamos tu confirmación</p>
+      {/* ✨ Título principal usando la clase unificada */}
+      <p className={mainTitleClass || titleClass}>Esperamos tu confirmación</p>
       <p className={descriptionClass}>{descripcion}</p>
       <Link target="_blank" href={linkConfirmacion?? "/"}>
         <button className={buttonClass}>Confirmar</button>

@@ -12,6 +12,8 @@ const Regalos = ({
   img2,
   textColor,
   descripcion, // Nueva prop para personalizar el texto
+  // ✨ Nueva prop para la clase unificada de títulos principales
+  mainTitleClass,
   sectionClass = "w-[100%] justify-center items-center text-center my-1 lg:px-[25px] mb-1",
   imageClass = "mx-auto block my-3 mt-10",
   titleClass = `lg:text-[30px] font-normal my-3 text-[20px] ${textColor}`,
@@ -43,7 +45,8 @@ const Regalos = ({
         className="mx-auto block my-3 mt-10"
         color={iconColor}
       />
-      <p className={titleClass}>Si querés hacernos un regalo</p>
+      {/* ✨ Título principal usando la clase unificada */}
+      <p className={mainTitleClass || titleClass}>Si querés hacernos un regalo</p>
       <p className={descriptionClass}>
         {descripcion || "¡El mejor regalo es tu presencia! Si deseás realizarnos otro regalo, podés colaborar en:"}
       </p>

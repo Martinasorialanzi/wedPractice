@@ -19,6 +19,8 @@ const Mas = ({
   masInfoTitle = "Más información", // Título personalizable para la sección
   masInfoDescription = "Toda la información importante sobre nuestro evento", // Descripción personalizable
   textColor,
+  // ✨ Nueva prop para la clase unificada de títulos principales
+  mainTitleClass,
   sectionClass = "w-[100%] justify-center items-center text-center my-1 lg:px-[25px]",
   imageClass = "mx-auto block my-3 mt-10",
   titleClass = `${textColor} lg:text-[30px] font-normal my-3 text-[20px]`,
@@ -61,7 +63,8 @@ const Mas = ({
               className="mx-auto block my-3 mt-10"
               color={iconColor}
             />
-            <p className={titleClass}>Dresscode</p>
+            {/* ✨ Título principal usando la clase unificada */}
+            <p className={mainTitleClass || titleClass}>Dresscode</p>
             <p className={descriptionClass}>Te compartimos una sugerencia:</p>
             <div className="flex justify-center items-center">
               <button onClick={openModal} className={buttonClass}>
@@ -77,7 +80,8 @@ const Mas = ({
               className="mx-auto block my-3 mt-10"
               color={iconColor}
             />
-            <p className={titleClass}>Canciones que no pueden faltar</p>
+            {/* ✨ Título secundario usando la clase unificada */}
+            <p className={mainTitleClass || titleClass}>Canciones que no pueden faltar</p>
             <p className={descriptionClass}>
               Queremos crear una playlist inolvidable
             </p>
@@ -96,7 +100,8 @@ const Mas = ({
               className="mx-auto block my-3 mt-10"
               color={iconColor}
             />
-            <p className={titleClass}>Recuerdos</p>
+            {/* ✨ Título secundario usando la clase unificada */}
+            <p className={mainTitleClass || titleClass}>Recuerdos</p>
             <p className={descriptionClass}>
               En este link podés compartirnos y ver fotos del evento
             </p>
@@ -116,7 +121,8 @@ const Mas = ({
               className="mx-auto block my-3 mt-10"
               color={iconColor}
             />
-            <p className={titleClass}>{masInfoTitle}</p>
+            {/* ✨ Título secundario usando la clase unificada */}
+            <p className={mainTitleClass || titleClass}>{masInfoTitle}</p>
             <p className={descriptionClass}>{masInfoDescription}</p>
             <div className="flex justify-center items-center">
               {typeof masInfo === 'string' ? (
