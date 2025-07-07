@@ -39,7 +39,7 @@ CTA: 4274084-2 089-9
 CBU: 00700894-30004274084299
 CUIL: 27-37191501-5
 
-• Buzon en salon`;
+• Buzón en salón`;
 
   // Texto personalizado para la descripción de regalos
   const regaloDescripcion = " ";
@@ -74,7 +74,7 @@ CUIL: 27-37191501-5
         textColor={textColor}
       />
         <Confirmation
-          linkConfirmacion="https://forms.gle/fuzJNrEwuVzhaW4x7"
+          linkConfirmacion="https://forms.gle/m7cL72R96y21KdGw9"
           buttonClassColors={`${buttonBgColor} ${buttonTextColor} ${buttonHoverColor}`}
           textColor={textColor}
           descripcion="Nuestro festejo no sería lo mismo sin vos. Confirmanos tu presencia a
