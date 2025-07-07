@@ -65,14 +65,11 @@ CUIL: 27-37191501-5
         />
       <Event
       extra={false}
-        ceremonia
-        lugarCeremonia="Iglesia de Villa Nougués"
-        linkCeremonia="https://maps.app.goo.gl/CcQLgFAwshoPwPU5A"
-        horarioCeremonia="12.30 hs"
+        ceremonia={false}
         fiesta
-        lugarFiesta="Después de la ceremonia, te esperamos para la recepción"
+        lugarFiesta="Hosteria de Villa Nougués"
         linkFiesta="https://maps.app.goo.gl/Zx6qX7T4kK4NQf886"
-        horarioFiesta="Hostería de Villa Nougués"
+        horarioFiesta="17.30 hs"
         buttonClassColors={`${buttonBgColor} ${buttonTextColor} ${buttonHoverColor}`}
         textColor={textColor}
       />

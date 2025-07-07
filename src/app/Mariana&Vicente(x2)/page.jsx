@@ -4,8 +4,8 @@ import Banner from "@/components/home/Home";
 import Mas from "@/components/mas/Mas";
 import Regalos from "@/components/regalos/Regalos";
 import Footer from "@/components/footer/Footer";
-import imgSquare2 from "../../../public/marianaVicente/portadaMV1.png";
-import imgppal from "../../../public/marianaVicente/portadaMV1.png";
+import imgSquare2 from "../../../public/marianaVicente/portadaMV2.png";
+import imgppal from "../../../public/marianaVicente/portadaMV2.png";
 import { Cormorant_Garamond } from "next/font/google";
 import React from "react";
 
