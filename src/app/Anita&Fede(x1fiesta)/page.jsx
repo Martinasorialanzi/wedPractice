@@ -4,8 +4,8 @@ import Banner from "@/components/home/Home";
 import Mas from "@/components/mas/Mas";
 import Regalos from "@/components/regalos/Regalos";
 import Footer from "@/components/footer/Footer";
-import imgSquare2 from "../../../public/anita&Fede/anita&fede.JPG";
-import imgppal from "../../../public/anita&Fede/anita&fede.JPG";
+import imgSquare2 from "../../../public/anita&Fede/anita&fede1.png";
+import imgppal from "../../../public/anita&Fede/anita&fede1.png";
 import { Didact_Gothic } from "next/font/google";
 import React from "react";
 
