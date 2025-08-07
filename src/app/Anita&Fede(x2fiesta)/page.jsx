@@ -33,16 +33,15 @@ export default function Home() {
   const textColor = "text-[#000000]";
   
   // Texto con saltos de línea para la sección de regalos
-  const regaloAliasText = `• Mercado Pago
-Federico [Apellido]
-CVU: [Número CVU]
-Alias: [Alias]
-CUIT/CUIL: [Número CUIT/CUIL]      
+  const regaloAliasText = `• Ualá Bank S.A.U.
+Federico Marcilla
+CVU: 3840200500000008119908
+Alias: fedeyanita.casa     
 
 • Buzon en salon`;
 
   // Texto personalizado para la descripción de regalos
-  const regaloDescripcion = "Si queres ayudarnos con nuestra Luna de Miel:";
+  const regaloDescripcion = "Si queres hacernos un regalo:";
 
   return (
     <>
