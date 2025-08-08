@@ -41,7 +41,7 @@ Alias: fedeyanita.casa
 • Buzon en salon`;
 
   // Texto personalizado para la descripción de regalos
-  const regaloDescripcion = "Si queres hacernos un regalo:";
+  const regaloDescripcion = "Su compañía en nuestro día especial es el mejor regalo que podríamos recibir. Si desean obsequiarnos algo, agradeceríamos una contribución para nuestro hogar";
 
   return (
     <>
