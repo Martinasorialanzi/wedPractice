@@ -55,7 +55,7 @@ Alias: fedeyanita.casa
         fechaCountDown=""
         img2={imgSquare2}
         imgPrincipal={imgppal} 
-        fechaCounter={"2025-09-13T18:00:00"}
+        fechaCounter={"2025-09-13T21:00:00"}
         textColor={textColor}
         divGrid="max-w-4xl "
         divGridImage="w-1/3"
@@ -65,7 +65,7 @@ Alias: fedeyanita.casa
         fiesta
         lugarFiesta="Florentina"
         linkFiesta="https://www.google.com/maps/place/Salon+de+fiestas+y+eventos+Florentina/data=!4m2!3m1!1s0x0:0xb0af4b848c12c3c2?sa=X&ved=1t:2428&ictx=111"
-        horarioFiesta="18hs"
+        horarioFiesta="21hs"
         buttonClassColors={`${buttonBgColor} ${buttonTextColor} ${buttonHoverColor}`}
         textColor={textColor}
       />
