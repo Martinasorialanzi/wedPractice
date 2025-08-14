@@ -61,6 +61,7 @@ Alias: fedeyanita.casa
         />
         <Event
           extra={false}
+          ceremonia={false}
           fiesta
           lugarFiesta="Florentina"
           linkFiesta="https://www.google.com/maps/place/Salon+de+fiestas+y+eventos+Florentina/data=!4m2!3m1!1s0x0:0xb0af4b848c12c3c2?sa=X&ved=1t:2428&ictx=111"
