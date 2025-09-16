@@ -66,6 +66,7 @@ Mercado Pago
           extra={false}
           ceremonia = {false}
           fiesta
+          iconColor={iconColor}
           lugarFiesta="Hostería de Villa Nougués"
           linkFiesta="https://maps.app.goo.gl/Zx6qX7T4kK4NQf886"
           horarioFiesta="18.00hs"
@@ -91,6 +92,9 @@ Mercado Pago
           descripcion={regaloDescripcion} // Nuevo texto personalizado
         />
         <Mas
+        textColor={textColor}
+        iconColor={iconColor}
+        buttonClassColors={`${buttonBgColor} ${buttonTextColor} ${buttonHoverColor}`}
           spotify="https://open.spotify.com/playlist/28yg8QG6rjzm5KNsUXuDz4?si=BiZzDsqYRGqQIewZVNfnmA&pt=1c42e060d2a180f855a44c52929536da&pi=ETzqhxGdQbeOw"
         />
 

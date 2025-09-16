@@ -93,6 +93,13 @@ Mercado Pago
           iconColor={iconColor}
           descripcion={regaloDescripcion} // Nuevo texto personalizado
         />
+        <Mas
+        textColor={textColor}
+        iconColor={iconColor}
+        buttonClassColors={`${buttonBgColor} ${buttonTextColor} ${buttonHoverColor}`}
+          spotify="https://open.spotify.com/playlist/28yg8QG6rjzm5KNsUXuDz4?si=BiZzDsqYRGqQIewZVNfnmA&pt=1c42e060d2a180f855a44c52929536da&pi=ETzqhxGdQbeOw"
+        />
+
       </main>
       <Footer footerClassName={`${buttonBgColor} h-[57px]`} />
     </>
