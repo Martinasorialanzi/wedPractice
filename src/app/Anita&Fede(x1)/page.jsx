@@ -89,6 +89,7 @@ Alias: fedeyanita.casa
         />
         <Mas
           dresscode="Elegante"
+          fotos="https://photos.app.goo.gl/tB4eSxGDMzZYibti6"
           buttonClassColors={`${buttonBgColor} ${buttonTextColor} ${buttonHoverColor}`}
           textColor={textColor}
         />
