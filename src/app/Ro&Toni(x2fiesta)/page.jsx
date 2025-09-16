@@ -69,7 +69,7 @@ Mercado Pago
           iconColor={iconColor}
           lugarFiesta="Hostería de Villa Nougués"
           linkFiesta="https://maps.app.goo.gl/Zx6qX7T4kK4NQf886"
-          horarioFiesta="18.00hs"
+          horarioFiesta="22.00hs"
           buttonClassColors={`${buttonBgColor} ${buttonTextColor} ${buttonHoverColor}`}
           textColor={textColor}
         />
