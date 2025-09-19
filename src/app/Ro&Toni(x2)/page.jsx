@@ -35,7 +35,7 @@ export default function Home() {
   // Texto con saltos de línea para la sección de regalos
   const regaloAliasText = `• Alias: ro.toni
 CVU: 0000003100020814781654
-Nombre: Antonio Angelillo
+Nombre: Antonio  Angelillo
 Mercado Pago
 
 • Buzón en salón`;

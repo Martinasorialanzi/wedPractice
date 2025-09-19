@@ -99,7 +99,6 @@ Mercado Pago
         buttonClassColors={`${buttonBgColor} ${buttonTextColor} ${buttonHoverColor}`}
           spotify="https://open.spotify.com/playlist/28yg8QG6rjzm5KNsUXuDz4?si=DUf1Fm6PTJOujTMaTC_hKA&pi=sFJHahjDTnK2V&pt=7b0e534777b5556ee2b2affbee6e8060"
         />
-
       </main>
       <Footer footerClassName={`${buttonBgColor} h-[57px]`} />
     </>
