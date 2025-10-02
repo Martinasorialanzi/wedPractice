@@ -35,8 +35,14 @@ export default function Home() {
   // Texto con saltos de línea para la sección de regalos
   const regaloAliasText = `• Alias: ro.toni
 CVU: 0000003100020814781654
-Nombre: Antonio  Angelillo
+Nombre: Antonio Angelillo
 Mercado Pago
+
+• Cuenta en Dólares 069-441679/9
+Número de CBU: 0720069488000044167990
+Alias: ro.toni.dolares
+Titular de la cuenta: Angelillo Antonio
+Banco Santander
 
 • Buzón en salón`;
 
@@ -97,7 +103,7 @@ Mercado Pago
         textColor={textColor}
         iconColor={iconColor}
         buttonClassColors={`${buttonBgColor} ${buttonTextColor} ${buttonHoverColor}`}
-          spotify="https://open.spotify.com/playlist/28yg8QG6rjzm5KNsUXuDz4?si=DUf1Fm6PTJOujTMaTC_hKA&pi=sFJHahjDTnK2V&pt=7b0e534777b5556ee2b2affbee6e8060"
+          spotify="https://open.spotify.com/playlist/28yg8QG6rjzm5KNsUXuDz4?si=R72S_6o4RyeSGj1FhRf2Ng&pi=KQvJ6wPKSK6xu&pt=ce56b8f47cf5a340442074e8a7fb7412"
         />
       </main>
       <Footer footerClassName={`${buttonBgColor} h-[57px]`} />
