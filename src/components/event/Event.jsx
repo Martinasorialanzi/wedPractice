@@ -12,6 +12,7 @@ const Event = ({
   lugarFiesta,
   linkFiesta,
   horarioFiesta,
+  tituloFiesta = "Fiesta", // ← NUEVO: texto del título de fiesta (null para ocultarlo)
   buttonClassColors,
   ceremonia = true,
   fiesta = true,
@@ -56,7 +57,6 @@ const Event = ({
               className="mx-auto block my-3 mt-10"
               color={iconColor}
             />
-            {/* ✨ Título secundario usando la clase unificada */}
             <p className={mainTitleClass || titleClass}>
               Ceremonia
             </p>
@@ -83,10 +83,12 @@ const Event = ({
               className="mx-auto block my-3 mt-10"
               color={iconColor}
             />
-            {/* ✨ Título secundario usando la clase unificada */}
-            <p className={mainTitleClass || titleClass}>
-              Fiesta
-            </p>
+            {/* ← NUEVO: el título ahora sale de la prop tituloFiesta */}
+            {tituloFiesta && (
+              <p className={mainTitleClass || titleClass}>
+                {tituloFiesta}
+              </p>
+            )}
             <p
               className={`text-[14px] font-normal mt-1 text-center ${lugarClass} ${textColor}`}
             >
@@ -103,14 +105,13 @@ const Event = ({
           </section>
         )}
 
-{extra && (
+        {extra && (
           <section className={`my-3 mt-10 ${fiestaSectionClass}`}>
             <PiHeartThin
               style={{ width: "3rem", height: "3rem" }}
               className="mx-auto block my-3 mt-10"
               color={iconColor}
             />
-            {/* ✨ Título secundario usando la clase unificada */}
             <p className={mainTitleClass || titleClass}>
               {tituloExtra}
             </p>
