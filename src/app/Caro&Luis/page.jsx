@@ -40,7 +40,6 @@ export default function Home() {
 
   // Los tres renglones de la sección fiesta
   const infoFiesta = `Ceremonia: 18:15 hs
-Fiesta: 22:00 hs
 Nuevo Terrazas de San José`;
 
   return (
