@@ -12,6 +12,8 @@ const Regalos = ({
   img2,
   textColor,
   descripcion, // Nueva prop para personalizar el texto
+  showIcon = true,
+  showVerButton = true,
   // ✨ Nueva prop para la clase unificada de títulos principales
   mainTitleClass,
   sectionClass = "w-[100%] justify-center items-center text-center my-1 lg:px-[25px] mb-1",
@@ -40,21 +42,25 @@ const Regalos = ({
 
   return (
     <section id="Regalos" className={sectionClass}>
-      <PiGiftThin
-        style={{ width: "3rem", height: "3rem" }}
-        className="mx-auto block my-3 mt-10"
-        color={iconColor}
-      />
+      {showIcon && (
+        <PiGiftThin
+          style={{ width: "3rem", height: "3rem" }}
+          className="mx-auto block my-3 mt-10"
+          color={iconColor}
+        />
+      )}
       {/* ✨ Título principal usando la clase unificada */}
       <p className={mainTitleClass || titleClass}>Si querés hacernos un regalo</p>
       <p className={descriptionClass}>
         {descripcion || "¡El mejor regalo es tu presencia! Si deseás realizarnos otro regalo, podés colaborar en:"}
       </p>
-      <div className="flex justify-center items-center">
-        <button onClick={openModal} className={buttonClass}>
-          Ver
-        </button>
-      </div>
+      {showVerButton && (
+        <div className="flex justify-center items-center">
+          <button onClick={openModal} className={buttonClass}>
+            Ver
+          </button>
+        </div>
+      )}
 
       {isModalOpen && (
         <div className="fixed inset-0 flex items-center justify-center z-50">

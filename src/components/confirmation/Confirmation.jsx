@@ -8,6 +8,7 @@ const Confirmation = ({
   linkConfirmacion,
   textColor,
   descripcion,
+  showIcon = true,
   // ✨ Nueva prop para la clase unificada de títulos principales
   mainTitleClass,
   sectionClass = "col-span-1 justify-self-center text-center p-[0px] lg:px-[250px] my-3 ",
@@ -23,11 +24,13 @@ const Confirmation = ({
 }) => {
   return (
     <section id="Confirmación" className={sectionClass}>
-      <PiCalendarCheckThin
-        style={{ width: "3rem", height: "3rem" }}
-        className="mx-auto block my-3 mt-10"
-        color={iconColor}
-      />
+      {showIcon && (
+        <PiCalendarCheckThin
+          style={{ width: "3rem", height: "3rem" }}
+          className="mx-auto block my-3 mt-10"
+          color={iconColor}
+        />
+      )}
       {/* ✨ Título principal usando la clase unificada */}
       <p className={mainTitleClass || titleClass}>Esperamos tu confirmación</p>
       <p className={descriptionClass}>{descripcion}</p>

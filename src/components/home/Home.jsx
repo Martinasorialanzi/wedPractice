@@ -33,7 +33,8 @@ const Banner = ({
   widthImgBanner="",
   heightImgBanner="",
   divGrid="",
-  divGridImage=""
+  divGridImage="",
+  showSaveTheDate = true
 }) => {
   return (
     <>
@@ -78,15 +79,17 @@ const Banner = ({
             </div>
           ) : null}
 
-          <section className={`my-3 mt-20 ${counterSectionClass}`}>
-            <p className={`text-[20px] font-normal text-center ${saveTheDateClass} ${textColor}`}>
-              SAVE THE DATE
-            </p>
-            <p className={`text-[15px] font-normal text-center ${fechaCountDownClass} ${textColor}`}>
-              {fechaCountDown}
-            </p>
-            <Counter fechaCounter={fechaCounter} counterStyle={`${textColor} ${counterClass}`} />
-          </section>
+          {showSaveTheDate && (
+            <section className={`my-3 mt-20 ${counterSectionClass}`}>
+              <p className={`text-[20px] font-normal text-center ${saveTheDateClass} ${textColor}`}>
+                SAVE THE DATE
+              </p>
+              <p className={`text-[15px] font-normal text-center ${fechaCountDownClass} ${textColor}`}>
+                {fechaCountDown}
+              </p>
+              <Counter fechaCounter={fechaCounter} counterStyle={`${textColor} ${counterClass}`} />
+            </section>
+          )}
         </div>
       </section>
     </>

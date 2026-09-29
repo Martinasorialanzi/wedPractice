@@ -17,6 +17,14 @@ const Event = ({
   ceremonia = true,
   fiesta = true,
   extra = true,
+  showTituloPrincipal = true,
+  showIcon = true,
+  ceremoniaImage,
+  ceremoniaImageClass = "mx-auto block -mt-2 mb-1",
+  ceremoniaImageSize = 180,
+  fiestaImage,
+  fiestaImageClass = "mx-auto block -mt-2 mb-1",
+  fiestaImageSize = 180,
   textColor,
   tituloExtra,
   lugarExtra,
@@ -45,21 +53,33 @@ const Event = ({
         id="Evento"
         className={`w-[100%] justify-center items-center text-center my-3 mt-10 ${sectionClass}`}
       >
-        {/* ✨ Título principal usando la clase unificada */}
-        <p className={mainTitleClass || `lg:text-[30px] font-normal my-3 text-[20px] ${textColor}`}>
-          Queremos compartir este día con vos
-        </p>
+        {showTituloPrincipal && (
+          <p className={mainTitleClass || `lg:text-[30px] font-normal my-3 text-[20px] ${textColor}`}>
+            Queremos compartir este día con vos
+          </p>
+        )}
 
         {ceremonia && (
           <section className={`my-3 mt-10 ${ceremoniaSectionClass}`}>
-            <PiChurchThin
-              style={{ width: "3rem", height: "3rem" }}
-              className="mx-auto block my-3 mt-10"
-              color={iconColor}
-            />
+            {showIcon && (
+              <PiChurchThin
+                style={{ width: "3rem", height: "3rem" }}
+                className="mx-auto block my-3 mt-10"
+                color={iconColor}
+              />
+            )}
             <p className={mainTitleClass || titleClass}>
               Ceremonia
             </p>
+            {ceremoniaImage && (
+              <Image
+                src={ceremoniaImage}
+                alt="Ceremonia"
+                width={ceremoniaImageSize}
+                height={ceremoniaImageSize}
+                className={ceremoniaImageClass}
+              />
+            )}
             <p
               className={`text-[14px] font-normal mt-1 text-center ${lugarClass} ${textColor}`}
             >
@@ -78,16 +98,27 @@ const Event = ({
 
         {fiesta && (
           <section className={`my-3 mt-10 ${fiestaSectionClass}`}>
-            <PiCheersThin
-              style={{ width: "3rem", height: "3rem" }}
-              className="mx-auto block my-3 mt-10"
-              color={iconColor}
-            />
+            {showIcon && (
+              <PiCheersThin
+                style={{ width: "3rem", height: "3rem" }}
+                className="mx-auto block my-3 mt-10"
+                color={iconColor}
+              />
+            )}
             {/* ← NUEVO: el título ahora sale de la prop tituloFiesta */}
             {tituloFiesta && (
               <p className={mainTitleClass || titleClass}>
                 {tituloFiesta}
               </p>
+            )}
+            {fiestaImage && (
+              <Image
+                src={fiestaImage}
+                alt="Fiesta"
+                width={fiestaImageSize}
+                height={fiestaImageSize}
+                className={fiestaImageClass}
+              />
             )}
             <p
               className={`text-[14px] font-normal mt-1 text-center ${lugarClass} ${textColor}`}
