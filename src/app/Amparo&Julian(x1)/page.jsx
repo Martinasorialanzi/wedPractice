@@ -6,6 +6,7 @@ import Footer from "@/components/footer/Footer";
 import imgSquare2 from "../../../public/amparoJulian/ajPortada.png";
 import imgppal from "../../../public/amparoJulian/ajPortada.png";
 import imgCeremonia from "../../../public/amparoJulian/ajCeremonia.png";
+import imgFiesta from "../../../public/amparoJulian/ajFiesta.png";
 import { Playfair_Display, Cormorant_SC } from "next/font/google";
 import React from "react";
 
@@ -52,14 +53,19 @@ CUIT/CUIL: 20364204818
 • Buzon en salon`;
 
   // Texto personalizado para la descripción de regalos
-  const regaloDescripcionText = `Transferencia bancaria
-Alias: alias
-CBU: 000000000000000000
-Caja de Ahorro en Pesos
-Banco
-Titular:
+  const regaloDescripcionText = `- Transferencia bancaria
+Banco Francés 
 
-Buzón en el salón`;
+Caja de Ahorro en Pesos 
+Alias: AMPAROYJULIAN
+CBU: 0170215840000022030296
+
+Caja de ahorros en dólares 
+Alias: AMPAROYJULIAN.USS
+CBU: 0170215844000066003164
+
+
+- Buzón en el salón`;
 
   // Clase de título con la tipografía Cormorant SC para Ceremonia, Fiesta, Confirmación y Regalos
   const titleFontClass = `${cormorantSC.className} lg:text-[32px] font-medium my-3 text-[22px] tracking-wide ${textColor}`;
@@ -97,7 +103,7 @@ Buzón en el salón`;
           horarioCeremonia="17:15 hs"
           fiesta
           tituloFiesta="Recepción y Fiesta"
-          fiestaImage={imgCeremonia}
+          fiestaImage={imgFiesta}
           lugarFiesta="Salón Hostería Villa Nougues"
           linkFiesta="https://maps.app.goo.gl/rV6FbxLkfxzpvFKr8"
           horarioFiesta="18:30 hs"
@@ -109,7 +115,7 @@ Buzón en el salón`;
           buttonClassColors={`${buttonBgColor} ${buttonTextColor} ${buttonHoverColor}`}
           textColor={textColor}
           descripcion="Nuestro festejo no sería lo mismo sin vos. Confirmanos tu presencia a
-        través del enlace."
+        través del enlace antes del 7 de Noviembre"
           showIcon={false}
           mainTitleClass={titleFontClass}
         />
