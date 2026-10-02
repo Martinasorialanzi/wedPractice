@@ -15,7 +15,6 @@ const cormorantGaramond = Cormorant_Garamond({
   display: "swap",
 });
 
-// Componente para formatear texto con saltos de línea
 const FormattedText = ({ text }) => {
   return text.split("\n").map((line, index) => (
     <React.Fragment key={index}>
@@ -44,7 +43,7 @@ Alias: ro.toni.dolares
 Titular de la cuenta: Angelillo Antonio
 Banco Santander
 
-• Buzón en salón`;
+• Buzón en Salón`;
 
   // Texto personalizado para la descripción de regalos
   const regaloDescripcion = " ";
