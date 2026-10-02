@@ -65,7 +65,7 @@ Alias: AMPAROYJULIAN.USS
 CBU: 0170215844000066003164
 
 
-- Buzón en el Salón`;
+- Buzón en el salón`;
 
   // Clase de título con la tipografía Cormorant SC para Ceremonia, Fiesta, Confirmación y Regalos
   const titleFontClass = `${cormorantSC.className} lg:text-[32px] font-medium my-3 text-[22px] tracking-wide ${textColor}`;
