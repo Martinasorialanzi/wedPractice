@@ -7,7 +7,9 @@ import imgSquare2 from "../../../public/amparoJulian/ajPortada.png";
 import imgppal from "../../../public/amparoJulian/ajPortada.png";
 import imgCeremonia from "../../../public/amparoJulian/ajCeremonia.png";
 import imgFiesta from "../../../public/amparoJulian/ajFiesta.png";
+import imgFotos from "../../../public/amparoJulian/ajFotos.png";
 import { Playfair_Display, Cormorant_SC } from "next/font/google";
+import Image from "next/image";
 import React from "react";
 
 const playfairDisplay = Playfair_Display({
@@ -134,6 +136,11 @@ CBU: 0170215844000066003164
           showIcon={false}
           showVerButton={false}
           mainTitleClass={titleFontClass}
+        />
+        <Image
+          src={imgFotos}
+          alt="Fotos"
+          className="w-full max-w-md object-contain my-6"
         />
       </main>
       <Footer footerClassName={`${buttonBgColor} h-[57px]`} />
