@@ -104,16 +104,16 @@ CBU: 0170215844000066003164
           linkCeremonia="https://maps.app.goo.gl/FY2gwo1PGKtgk6757"
           horarioCeremonia="17:15 hs"
           fiesta
-          tituloFiesta="Recepción y Fiesta"
+          tituloFiesta="Fiesta"
           fiestaImage={imgFiesta}
           lugarFiesta="Salón Hostería Villa Nougues"
           linkFiesta="https://maps.app.goo.gl/rV6FbxLkfxzpvFKr8"
-          horarioFiesta="18:30 hs"
+          horarioFiesta="22:30 hs"
           buttonClassColors={`${buttonBgColor} ${buttonTextColor} ${buttonHoverColor}`}
           textColor={textColor}
         />
         <Confirmation
-          linkConfirmacion="https://forms.gle/8Wf3ydQG5n6EC6zy6"
+          linkConfirmacion="https://forms.gle/MAywGSbe493gp6id9"
           buttonClassColors={`${buttonBgColor} ${buttonTextColor} ${buttonHoverColor}`}
           textColor={textColor}
           descripcion="Nuestro festejo no sería lo mismo sin vos. Confirmanos tu presencia a

@@ -3,8 +3,8 @@ import Event from "@/components/event/Event";
 import Banner from "@/components/home/Home";
 import Regalos from "@/components/regalos/Regalos";
 import Footer from "@/components/footer/Footer";
-import imgSquare2 from "../../../public/amparoJulian/ajPortada1.png";
-import imgppal from "../../../public/amparoJulian/ajPortada1.png";
+import imgSquare2 from "../../../public/amparoJulian/ajPortada2.png";
+import imgppal from "../../../public/amparoJulian/ajPortada2.png";
 import imgCeremonia from "../../../public/amparoJulian/ajCeremonia.png";
 import imgFiesta from "../../../public/amparoJulian/ajFiesta.png";
 import imgFotos from "../../../public/amparoJulian/ajFotos.png";
@@ -104,16 +104,16 @@ CBU: 0170215844000066003164
           linkCeremonia="https://maps.app.goo.gl/FY2gwo1PGKtgk6757"
           horarioCeremonia="17:15 hs"
           fiesta
-          tituloFiesta="Recepción y Fiesta"
+          tituloFiesta="Fiesta"
           fiestaImage={imgFiesta}
           lugarFiesta="Salón Hostería Villa Nougues"
           linkFiesta="https://maps.app.goo.gl/rV6FbxLkfxzpvFKr8"
-          horarioFiesta="18:30 hs"
+          horarioFiesta="22:30 hs"
           buttonClassColors={`${buttonBgColor} ${buttonTextColor} ${buttonHoverColor}`}
           textColor={textColor}
         />
         <Confirmation
-          linkConfirmacion="https://forms.gle/8Wf3ydQG5n6EC6zy6"
+          linkConfirmacion="https://forms.gle/hWrCYfupT4Kgvpm97"
           buttonClassColors={`${buttonBgColor} ${buttonTextColor} ${buttonHoverColor}`}
           textColor={textColor}
           descripcion="Nuestro festejo no sería lo mismo sin vos. Confirmanos tu presencia a

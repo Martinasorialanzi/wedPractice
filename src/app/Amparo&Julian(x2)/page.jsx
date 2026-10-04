@@ -3,8 +3,8 @@ import Event from "@/components/event/Event";
 import Banner from "@/components/home/Home";
 import Regalos from "@/components/regalos/Regalos";
 import Footer from "@/components/footer/Footer";
-import imgSquare2 from "../../../public/amparoJulian/ajPortada1.png";
-import imgppal from "../../../public/amparoJulian/ajPortada1.png";
+import imgSquare2 from "../../../public/amparoJulian/ajPortada2.png";
+import imgppal from "../../../public/amparoJulian/ajPortada2.png";
 import imgCeremonia from "../../../public/amparoJulian/ajCeremonia.png";
 import imgFiesta from "../../../public/amparoJulian/ajFiesta.png";
 import imgFotos from "../../../public/amparoJulian/ajFotos.png";
@@ -113,7 +113,7 @@ CBU: 0170215844000066003164
           textColor={textColor}
         />
         <Confirmation
-          linkConfirmacion="https://forms.gle/8Wf3ydQG5n6EC6zy6"
+          linkConfirmacion="https://forms.gle/CZNeNSY92v5NqN6w9"
           buttonClassColors={`${buttonBgColor} ${buttonTextColor} ${buttonHoverColor}`}
           textColor={textColor}
           descripcion="Nuestro festejo no sería lo mismo sin vos. Confirmanos tu presencia a
