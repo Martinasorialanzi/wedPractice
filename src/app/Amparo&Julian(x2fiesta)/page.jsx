@@ -45,16 +45,7 @@ export default function Home() {
   const buttonTextColor = "text-[#e2e2e2]";
   const textColor = "text-[#686c65]";
 
-  // Texto con saltos de línea para la sección de regalos
-  const regaloAliasText = `• Mercado Pago
-Jose Augusto Rubino
-CVU: 0000003100050740770833
-Alias: memi.pepe
-CUIT/CUIL: 20364204818      
-
-• Buzon en salon`;
-
-  // Texto personalizado para la descripción de regalos
+  // Texto con saltos de línea para la sección de regalos (se muestra al tocar "Ver")
   const regaloDescripcionText = `- Transferencia bancaria
 Banco Francés 
 
@@ -118,23 +109,26 @@ CBU: 0170215844000066003164
           textColor={textColor}
           descripcion="Nuestro festejo no sería lo mismo sin vos. Confirmanos tu presencia a
         través del enlace antes del 7 de Noviembre"
-          showIcon={false}
+          showIcon={true}
+          iconColor="#686c65"
           mainTitleClass={titleFontClass}
         />
         <Regalos
-          alias={<FormattedText text={regaloAliasText} />}
-          regaloLista={true}
+          alias={
+            <FormattedText
+              text={regaloDescripcionText}
+              underlinedLines={["Transferencia bancaria", "Buzón en el Salón"]}
+            />
+          }
+          descripcion={
+            <FormattedText text={`El mejor regalo es compartir este día con vos.\nSi además querés hacernos un regalo, dejamos nuestros datos acá:`} />
+          }
+          regaloLista={false}
           regaloAlias={true}
           buttonClassColors={`${buttonBgColor} ${buttonTextColor} ${buttonHoverColor}`}
           textColor={textColor}
-          descripcion={
-            <FormattedText
-              text={regaloDescripcionText}
-              underlinedLines={["Transferencia bancaria", "Buzón en el salón"]}
-            />
-          } // Nuevo texto personalizado
-          showIcon={false}
-          showVerButton={false}
+          showIcon={true}
+          iconColor="#686c65"
           mainTitleClass={titleFontClass}
         />
         <Image
